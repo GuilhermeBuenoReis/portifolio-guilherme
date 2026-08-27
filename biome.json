@@ -1,5 +1,5 @@
 {
-	"$schema": "https://biomejs.dev/schemas/2.2.0/schema.json",
+	"$schema": "https://biomejs.dev/schemas/2.4.5/schema.json",
 	"vcs": {
 		"enabled": true,
 		"clientKind": "git",
@@ -7,7 +7,19 @@
 	},
 	"files": {
 		"ignoreUnknown": true,
-		"includes": ["**", "!node_modules", "!.next", "!dist", "!build"]
+		"includes": [
+			"**",
+			"!node_modules",
+			"!.next",
+			"!dist",
+			"!build",
+			"!src/routeTree.gen.ts"
+		]
+	},
+	"css": {
+		"parser": {
+			"tailwindDirectives": true
+		}
 	},
 	"formatter": {
 		"enabled": true,
@@ -22,6 +34,9 @@
 		"enabled": true,
 		"rules": {
 			"recommended": true,
+			"complexity": {
+				"noImportantStyles": "off"
+			},
 			"suspicious": {
 				"noUnknownAtRules": "off"
 			},
