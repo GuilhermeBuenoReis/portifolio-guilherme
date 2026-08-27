@@ -1,11 +1,7 @@
-import { User } from "lucide-react";
+import { Link } from "@tanstack/react-router";
+import { ArrowUpRight, User } from "lucide-react";
 import { motion } from "motion/react";
 import { cn } from "#/lib/utils";
-
-const metrics = [
-	{ value: "2+", label: "ANOS DE CÓDIGO" },
-	{ value: "5+", label: "PROJETOS ENTREGUES" },
-] as const;
 
 export function AboutSection() {
 	return (
@@ -36,10 +32,10 @@ export function AboutSection() {
 						</span>
 
 						<p className="text-lg leading-relaxed text-fg md:text-xl">
-							"Sou Guilherme Reis, desenvolvedor fullstack e estudante de
-							Engenharia de Software. Gosto de transformar ideias em produtos
-							reais, com interfaces limpas, APIs bem estruturadas e uma
-							arquitetura que não vira um incêndio depois de duas semanas."
+							"Sou Guilherme Reis, engenheiro de produto, desenvolvedor full
+							stack e Co-Founder e CTO da Anvero. Transformo problemas pouco
+							estruturados em produtos claros, úteis e tecnicamente
+							sustentáveis."
 						</p>
 
 						<div className="h-px bg-border" />
@@ -58,7 +54,7 @@ export function AboutSection() {
 									Guilherme Reis
 								</span>
 								<span className="text-xs text-fg-muted">
-									Software Engineering Student
+									Product Engineer · Co-Founder & CTO
 								</span>
 							</div>
 						</div>
@@ -77,30 +73,23 @@ export function AboutSection() {
 
 						<div className="flex flex-col gap-5">
 							<p className="text-sm leading-relaxed text-fg-secondary">
-								Meu foco está em criar sistemas úteis, bonitos e fáceis de
-								manter. Acredito que o código é apenas uma ferramenta para
-								resolver problemas reais e gerar valor para as pessoas.
+								Meu foco está em conectar problema, produto, interface e
+								engenharia. Código é uma ferramenta importante, mas a qualidade
+								da decisão vem antes da implementação.
 							</p>
 							<p className="text-sm leading-relaxed text-fg-secondary">
-								Trabalho incansavelmente para manter o equilíbrio entre a
-								agilidade da entrega e a sustentabilidade do código a longo
-								prazo, utilizando padrões de projeto e testes automatizados como
-								aliados.
+								Na Anvero, respondo por produto e tecnologia: arquitetura,
+								integrações, experiência de uso, segurança técnica e entrega.
 							</p>
 						</div>
 
-						<div className="flex gap-10 pt-2">
-							{metrics.map((metric) => (
-								<div key={metric.label} className="flex flex-col gap-1">
-									<span className="text-2xl font-bold text-fg">
-										{metric.value}
-									</span>
-									<span className="text-[0.65rem] font-semibold uppercase tracking-widest text-fg-muted">
-										{metric.label}
-									</span>
-								</div>
-							))}
-						</div>
+						<Link
+							to="/about"
+							className="inline-flex items-center gap-2 self-start text-sm font-semibold text-primary-hover transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--primary-border)"
+						>
+							Conhecer minha trajetória
+							<ArrowUpRight size={16} aria-hidden="true" />
+						</Link>
 					</motion.div>
 				</div>
 			</div>

@@ -27,8 +27,8 @@ export const contactInfo: ContactInfo[] = [
 	{
 		icon: MapPin,
 		label: "Localização",
-		value: "Brasil / Remoto",
-		href: "https://www.google.com/maps/place/Brasil",
+		value: "Guarapuava, PR / Remoto",
+		href: "https://www.google.com/maps/place/Guarapuava+-+PR",
 	},
 ];
 
@@ -56,7 +56,7 @@ export const socialLinks: SocialLink[] = [
 ];
 
 export const availabilityStatus = {
-	title: "Disponível para Projetos",
+	title: "Aberto a boas conversas",
 	description:
-		"Atualmente aceitando novas propostas para projetos freelancer e oportunidades full-time em engenharia de software de alta performance.",
+		"Produtos e SaaS, parcerias, desenvolvimento, consultoria e desafios técnicos com contexto real de negócio.",
 } as const;

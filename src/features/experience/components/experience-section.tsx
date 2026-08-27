@@ -15,7 +15,7 @@ export function ExperienceSection() {
 			<div className="mx-auto max-w-280 px-6">
 				<div className="mb-14 flex flex-col items-center gap-3 text-center">
 					<span className="text-xs font-semibold uppercase tracking-[0.18em] text-primary-hover">
-						Evolução de Produto e Carreira
+						Produto, tecnologia e entrega
 					</span>
 					<h2 className="text-3xl font-bold tracking-tight text-fg md:text-4xl">
 						Experiência

@@ -17,18 +17,18 @@ import type {
 } from "#/features/stack/types/stack-page";
 
 export const heroContent = {
-	eyebrow: "Arquitetando o futuro com precisão técnica.",
+	eyebrow: "Capacidades técnicas com contexto de produto.",
 	description:
-		"Uma visão aprofundada sobre as ferramentas, linguagens e metodologias que compõem meu ecossistema de desenvolvimento, focada em performance, escalabilidade e manutenibilidade.",
+		"Tecnologias, práticas e decisões que uso para construir produtos completos. Sem porcentagens arbitrárias: cada capacidade aparece ligada ao trabalho que ajuda a entregar.",
 } as const;
 
 export const frontendCard: FrontendCardData = {
 	title: "Frontend Engineering",
 	subtitle: "Interface & User Experience",
 	skills: [
-		{ label: "React / Next.js", level: 95 },
-		{ label: "TypeScript / JavaScript", level: 92 },
-		{ label: "Tailwind CSS / shadcn/ui", level: 98 },
+		{ label: "React / Next.js" },
+		{ label: "TypeScript / JavaScript" },
+		{ label: "Tailwind CSS / shadcn/ui" },
 	],
 	description:
 		"Foco em interfaces declarativas, componentes reutilizáveis, acessibilidade, performance e experiências responsivas com boa experiência de usuário.",
@@ -88,9 +88,8 @@ export const infraCard: InfraCardData = {
 		"OpenAPI",
 		"Scalar",
 	],
-	command: "$ deploy --environment production --auto-scaling=true",
 	description:
-		"Ambientes organizados, integração contínua, documentação de APIs e estrutura preparada para evolução, deploy e manutenção.",
+		"Ambientes organizados, integração contínua, documentação de APIs e estrutura preparada para evolução, deploy e manutenção sem complexidade prematura.",
 };
 
 export const dailyToolsCard: DailyToolsCardData = {

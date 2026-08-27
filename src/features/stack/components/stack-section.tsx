@@ -14,13 +14,13 @@ export function StackSection() {
 			<div className="mx-auto max-w-280 px-6">
 				<div className="mb-14 flex flex-col items-center gap-3 text-center">
 					<span className="text-xs font-semibold uppercase tracking-[0.18em] text-primary-hover">
-						Tecnologias e Ferramentas
+						Engenharia aplicada
 					</span>
 					<h2 className="text-3xl font-bold tracking-tight text-fg md:text-4xl">
-						Stack Técnica
+						Capacidades para construir ponta a ponta
 					</h2>
 					<p className="max-w-md text-sm leading-relaxed text-fg-secondary">
-						Tecnologias e ferramentas que uso para criar produtos completos.
+						Da interface e domínio ao banco, entrega e manutenção do produto.
 					</p>
 				</div>
 

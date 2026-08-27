@@ -14,12 +14,12 @@ export function ProfessionalTrajectorySection() {
 					className="mx-auto flex max-w-2xl flex-col items-center gap-5 text-center"
 				>
 					<h1 className="text-4xl font-bold tracking-tight text-fg md:text-5xl">
-						Trajetória Profissional
+						Experiência em produto e engenharia
 					</h1>
 					<p className="text-sm leading-relaxed text-fg-secondary md:text-base">
-						Uma jornada dedicada à engenharia de software, construindo soluções
-						robustas e escaláveis desde os primeiros códigos acadêmicos até
-						aplicações em produção.
+						Uma trajetória que começou na implementação de sistemas e evoluiu
+						para responsabilidade sobre produto, arquitetura e decisões de
+						negócio.
 					</p>
 				</motion.div>
 

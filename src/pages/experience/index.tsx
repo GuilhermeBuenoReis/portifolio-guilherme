@@ -4,10 +4,10 @@ import { ProfileCtaSection } from "#/features/experience/components/profile-cta-
 
 export function ExperiencePage() {
 	return (
-		<main>
+		<>
 			<ProfessionalTrajectorySection />
 			<EducationAndCertificationsSection />
 			<ProfileCtaSection />
-		</main>
+		</>
 	);
 }

@@ -1,10 +1,13 @@
-import type { ProjectPreview } from "#/features/projects/components/project-preview-mockups";
-
-export type ProjectCategory = "Trabalho" | "Projeto Pessoal" | "Faculdade";
+export type ProjectCategory =
+	| "Produto"
+	| "Trabalho"
+	| "Experimento"
+	| "Acadêmico";
 
 export type ProjectRepo = {
 	label: string;
 	url: string;
+	kind: "website" | "repository";
 };
 
 export type Project = {
@@ -12,9 +15,11 @@ export type Project = {
 	name: string;
 	category: ProjectCategory;
 	description: string;
+	problem: string;
+	role: string;
+	status: string;
 	tags: string[];
 	repos: ProjectRepo[];
 	bannerGradient: string;
-	preview?: ProjectPreview;
 	featured?: boolean;
 };

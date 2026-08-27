@@ -1,4 +1,4 @@
-import { Layers, Sparkles, Target, Wrench } from "lucide-react";
+import { Blocks, Compass, Sparkles, Target } from "lucide-react";
 import type {
 	FocusCard,
 	HeroTitleSegment,
@@ -6,57 +6,57 @@ import type {
 } from "#/features/about/types/about-page";
 
 export const heroContent = {
-	eyebrow: "Guilherme Reis",
+	eyebrow: "Engenheiro de produto · Co-Founder & CTO",
 	subtitle:
-		"Sou desenvolvedor fullstack e estudante de Engenharia de Software. Trabalho criando aplicações web completas, unindo frontend, backend, banco de dados, arquitetura e experiência do usuário para transformar ideias em sistemas úteis, bonitos e fáceis de manter.",
+		"Sou Guilherme Reis, desenvolvedor full stack e Co-Founder e CTO da Anvero. Minha especialidade é transformar problemas ainda pouco estruturados em produtos digitais claros, úteis e tecnicamente sustentáveis.",
 	titleSegments: [
-		{ text: "Construindo " },
-		{ text: "produtos reais", highlight: true },
-		{ text: " com " },
-		{ text: "arquitetura limpa", highlight: true },
-		{ text: ", interfaces modernas e " },
-		{ text: "foco em negócio", highlight: true },
+		{ text: "Construo produtos na interseção entre " },
+		{ text: "negócio", highlight: true },
+		{ text: ", " },
+		{ text: "experiência", highlight: true },
+		{ text: " e " },
+		{ text: "engenharia", highlight: true },
 		{ text: "." },
 	] satisfies HeroTitleSegment[],
 } as const;
 
 export const storyContent = {
-	title: "Minha história",
+	title: "Da implementação à responsabilidade pelo produto",
 	paragraphs: [
-		"Minha jornada como desenvolvedor não começou tentando decorar framework ou seguir moda de tecnologia. Começou com uma vontade simples: construir coisas que funcionam de verdade e resolvem problemas reais.",
-		"Com o tempo, fui entendendo que uma boa aplicação não é só uma tela bonita ou uma API que responde. É o conjunto: regra de negócio bem pensada, banco organizado, interface clara, validação consistente, testes, performance e uma arquitetura que permita o projeto crescer sem virar bagunça.",
-		"Hoje, meu foco está em desenvolver produtos digitais completos. Gosto de trabalhar com React, Next.js, Node.js, Fastify, PostgreSQL, Drizzle ORM, TypeScript, Tailwind CSS e boas práticas como Clean Architecture, DDD e SOLID. Para mim, código bom é aquele que entrega valor, é fácil de evoluir e não faz o próximo dev querer chorar no banho.",
+		"Comecei no desenvolvimento buscando construir sistemas que funcionassem bem. Ao trabalhar com produtos reais, percebi que qualidade técnica isolada não resolve um problema mal compreendido.",
+		"Passei a olhar também para fluxo, experiência, operação e impacto. Hoje, antes de discutir framework, procuro entender quem usa, qual decisão precisa ser facilitada e o que sustenta a evolução do produto.",
+		"Na Anvero, essa responsabilidade ficou completa: participo da definição do produto e lidero arquitetura, integrações, experiência de uso, segurança técnica e entrega. A tecnologia continua central, mas sempre ligada ao problema de negócio que precisa resolver.",
 	],
 } as const;
 
 export const visionContent = {
-	title: "Visão de Produto",
+	title: "Como penso produto",
 	intro:
-		"Para mim, tecnologia é meio, não fim. Minha abordagem junta engenharia, design e regra de negócio para criar sistemas que fazem sentido para quem usa e para quem mantém.",
+		"Tecnologia é uma alavanca. Meu trabalho é combinar clareza de problema, experiência e engenharia para entregar algo útil e sustentável.",
 	items: [
 		{
 			icon: Target,
-			title: "Valor Real",
+			title: "Problema antes da funcionalidade",
 			description:
-				"Construir funcionalidades que resolvem problemas concretos, reduzem trabalho manual e melhoram processos.",
+				"Entender o contexto e a decisão do usuário antes de transformar uma ideia em backlog.",
 		},
 		{
-			icon: Layers,
-			title: "Arquitetura Limpa",
+			icon: Compass,
+			title: "Produto com direção",
 			description:
-				"Separar responsabilidades, organizar domínio, aplicação e infraestrutura, e evitar código acoplado sem necessidade.",
+				"Tomar decisões coerentes com o estágio do produto, sem complexidade prematura.",
 		},
 		{
 			icon: Sparkles,
-			title: "Experiência de Uso",
+			title: "Experiência como parte da solução",
 			description:
-				"Criar interfaces claras, responsivas e acessíveis, sem sacrificar performance ou simplicidade.",
+				"Reduzir fricção e deixar claro o próximo passo para quem usa o sistema.",
 		},
 		{
-			icon: Wrench,
-			title: "Manutenção",
+			icon: Blocks,
+			title: "Engenharia sustentável",
 			description:
-				"Pensar no projeto a longo prazo, com tipagem forte, validação, testes e padrões que facilitam evolução.",
+				"Construir uma base tipada, testável e preparada para evoluir conforme surgem evidências.",
 		},
 	] satisfies VisionItem[],
 } as const;
@@ -64,34 +64,28 @@ export const visionContent = {
 export const focusCards: FocusCard[] = [
 	{
 		tag: "01 / Produto",
-		title: "Produtos reais",
+		title: "Da hipótese à entrega",
 		description:
-			"Gosto de criar sistemas que saem do campo da ideia e viram ferramenta de trabalho: CRMs, dashboards, pedidos, agendamentos, contratos, relatórios e fluxos administrativos.",
+			"Transformo problemas pouco estruturados em fluxos, prioridades e decisões implementáveis.",
 	},
 	{
 		tag: "02 / Engenharia",
-		title: "Arquitetura e código",
+		title: "Arquitetura com contexto",
 		description:
-			"Tenho preferência por projetos bem estruturados, com camadas claras, TypeScript bem usado, validação com Zod, banco modelado com cuidado e APIs fáceis de consumir.",
+			"Escolho padrões e ferramentas de acordo com o domínio, o estágio e o custo real de manutenção.",
 	},
 	{
 		tag: "03 / Interface",
-		title: "UI com propósito",
+		title: "Clareza na experiência",
 		description:
-			"Não vejo interface como enfeite. Uma boa UI precisa guiar o usuário, reduzir fricção, passar confiança e deixar o sistema mais simples de entender.",
+			"Crio interfaces que orientam ações, reduzem fricção e tornam operações complexas mais compreensíveis.",
 	},
 ];
 
 export const philosophyContent = {
-	title: "A filosofia do código invisível",
+	title: "Software com intenção",
 	quote:
-		"O melhor software é aquele que resolve o problema sem fazer barulho. O usuário não precisa perceber a tecnologia por trás da solução; ele só precisa sentir que tudo funciona.",
-	badges: [
-		"Clareza",
-		"Escalabilidade",
-		"Simplicidade",
-		"Produto",
-		"Manutenção",
-	],
-	note: "Essa é a forma como encaro desenvolvimento: menos firula, mais intenção. Menos gambiarra bonita, mais base sólida. Menos tela feita só para impressionar, mais sistema feito para durar.",
+		"O melhor software não tenta provar o quanto é sofisticado. Ele torna uma decisão importante mais simples, confiável e clara.",
+	badges: ["Clareza", "Contexto", "Produto", "Engenharia", "Manutenção"],
+	note: "Essa é a base do meu trabalho: compreender antes de abstrair, entregar antes de sofisticar e evoluir com evidência, sem abandonar a qualidade técnica.",
 } as const;

@@ -23,14 +23,14 @@ export function ContactActions() {
 		>
 			<div className="flex flex-col gap-3">
 				<span className="font-mono text-xs font-semibold uppercase tracking-[0.18em] text-primary-hover">
-					Enviar uma Mensagem
+					Iniciar uma conversa
 				</span>
 				<h2 className="text-xl font-bold tracking-tight text-fg">
-					Vamos conversar sobre o seu projeto
+					Conte o contexto, não apenas a tecnologia
 				</h2>
 				<p className="text-sm leading-relaxed text-fg-secondary">
-					Clique abaixo para abrir o seu cliente de e-mail com o destinatário e
-					o assunto já preenchidos. É só escrever a mensagem e enviar.
+					Explique o problema, o estágio atual e o que você precisa decidir.
+					Isso torna a primeira conversa muito mais objetiva.
 				</p>
 			</div>
 

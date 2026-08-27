@@ -1,4 +1,4 @@
-import { Download, Mail } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 import { motion } from "motion/react";
 import { gmailHref } from "#/features/contact/data/contact-links";
 import { cn } from "#/lib/utils";
@@ -20,26 +20,27 @@ export function ProfileCtaSection() {
 				>
 					<div className="flex flex-col items-center gap-3">
 						<h2 className="text-3xl font-bold tracking-tight text-fg md:text-4xl">
-							Interessado no meu perfil?
+							Vamos conversar sobre produto ou tecnologia?
 						</h2>
 						<p className="max-w-md text-sm leading-relaxed text-fg-secondary">
-							Estou sempre aberto a novos desafios e parcerias inovadoras. Vamos
-							construir algo incrível juntos.
+							Estou aberto a conversas sobre produtos digitais, parcerias,
+							consultoria e desafios técnicos com contexto real de negócio.
 						</p>
 					</div>
 
 					<div className="flex flex-col items-center gap-3 sm:flex-row">
 						<a
-							href="/curriculo-guilherme-reis.pdf"
-							download
+							href="https://www.linkedin.com/in/guilherme-bueno-reis/"
+							target="_blank"
+							rel="noopener noreferrer"
 							className={cn(
 								"inline-flex items-center gap-2 rounded-lg px-5 py-2.5",
 								"bg-primary text-sm font-semibold text-white shadow-sm shadow-primary/25",
 								"transition-colors duration-150 hover:bg-primary-hover",
 							)}
 						>
-							<Download size={16} />
-							Download CV (PDF)
+							<Linkedin size={16} aria-hidden="true" />
+							Ver LinkedIn
 						</a>
 						<a
 							href={gmailHref}
@@ -54,7 +55,7 @@ export function ProfileCtaSection() {
 							)}
 						>
 							<Mail size={16} />
-							Me Envie um Email
+							Enviar e-mail
 						</a>
 					</div>
 				</motion.div>

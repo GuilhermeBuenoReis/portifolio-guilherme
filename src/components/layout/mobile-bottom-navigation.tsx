@@ -1,10 +1,10 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import {
 	Briefcase,
-	Code2,
+	FolderKanban,
 	Home,
-	Layers,
 	type LucideIcon,
+	MessageCircle,
 	User,
 } from "lucide-react";
 import { cn } from "#/lib/utils";
@@ -18,10 +18,10 @@ type BottomNavItem = {
 
 const items: BottomNavItem[] = [
 	{ label: "Início", to: "/", exact: true, icon: Home },
-	{ label: "Projetos", to: "/projects", exact: false, icon: Code2 },
+	{ label: "Produtos", to: "/projects", exact: false, icon: FolderKanban },
 	{ label: "Exp", to: "/experience", exact: false, icon: Briefcase },
-	{ label: "Stack", to: "/stack", exact: false, icon: Layers },
 	{ label: "Sobre", to: "/about", exact: false, icon: User },
+	{ label: "Contato", to: "/contact", exact: false, icon: MessageCircle },
 ];
 
 export function MobileBottomNavigation() {
@@ -57,7 +57,7 @@ export function MobileBottomNavigation() {
 										: "text-fg-muted hover:text-fg",
 								)}
 							>
-								<Icon size={20} />
+								<Icon size={20} aria-hidden="true" />
 								<span>{item.label}</span>
 							</Link>
 						</li>

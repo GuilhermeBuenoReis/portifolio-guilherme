@@ -6,50 +6,66 @@ import type {
 
 export const trajectoryItems: TrajectoryItem[] = [
 	{
+		id: "anvero",
+		period: "Jul 2026 - Presente",
+		role: "Co-Founder & CTO",
+		company: "Anvero",
+		highlights: [
+			"Liderança de produto e tecnologia em um SaaS para priorização de oportunidades comerciais no WhatsApp.",
+			"Responsabilidade por arquitetura, integrações, segurança técnica, experiência de uso e entrega.",
+			"Tradução de hipóteses de negócio em decisões de produto e engenharia durante a construção e validação do MVP.",
+		],
+	},
+	{
+		id: "buenos-cakes",
+		period: "Fev 2026 - Mai 2026",
+		role: "Desenvolvedor Full Stack",
+		company: "Buenos Cakes",
+		highlights: [
+			"Construção de uma plataforma para pedidos personalizados, catálogo, endereços e pagamentos.",
+			"Desenvolvimento de frontend, API modular, autenticação e modelagem de dados.",
+			"Organização do fluxo de compra e da base técnica para manutenção do produto.",
+		],
+	},
+	{
+		id: "velan",
+		period: "Jul 2025 - Nov 2025",
+		role: "Desenvolvedor Full Stack",
+		company: "Velan",
+		highlights: [
+			"Construção de uma solução web e mobile para organização de atendimentos de saúde.",
+			"Implementação de navegação, formulários validados e interfaces responsivas.",
+			"Estruturação de uma base consistente para evolução do produto.",
+		],
+	},
+	{
 		id: "onec",
-		period: "2025 - Presente",
-		role: "Fullstack Developer",
-		company: "Onec",
+		period: "Fev 2025 - Out 2025",
+		role: "Desenvolvedor Full Stack Freelancer",
+		company: "ONEC",
 		highlights: [
-			"Desenvolvimento de sistemas modulares para gestão financeira e operacional.",
-			"Arquitetura de APIs utilizando Node.js e TypeScript com foco em alta performance.",
-			"Manutenção e expansão de interfaces modernas com React e Tailwind CSS.",
-		],
-	},
-	{
-		id: "freelancer",
-		period: "2024 - Presente",
-		role: "Freelancer Fullstack Developer",
-		company: "Autônomo",
-		highlights: [
-			"Consultoria técnica para startups e negócios locais em transição digital.",
-			"Criação de landing pages otimizadas para SEO e dashboards administrativos.",
-			"Integração de gateways de pagamento e serviços de cloud como AWS e Vercel.",
-		],
-	},
-	{
-		id: "academico",
-		period: "2022 - Presente",
-		role: "Projetos Acadêmicos",
-		company: "Engenharia de Software",
-		highlights: [
-			"Liderança de times SCRUM em projetos semestrais de software.",
-			"Desenvolvimento de sistemas de gerenciamento de biblioteca e e-commerce educacional.",
-			"Aplicação de padrões de design, SOLID e testes unitários.",
+			"Desenvolvimento de frontend e backend para gestão de negociações, contratos e parceiros.",
+			"Criação de APIs tipadas, autenticação, validação, upload de arquivos e testes automatizados.",
+			"Construção de dashboards, formulários e componentes reutilizáveis para fluxos operacionais.",
 		],
 	},
 ];
 
 export const education: Education = {
 	degree: "Bacharelado em Engenharia de Software",
-	institution: "Instituição Superior de Ensino • 2022 - 2026 (Previsão)",
+	institution: "Centro Universitário UniGuairacá • Fev 2024 - Dez 2028",
 	details: [
-		{ label: "Média Global", value: "9.4 / 10" },
-		{ label: "Status", value: "6º Semestre" },
+		{ label: "Status", value: "Em andamento" },
+		{ label: "Previsão", value: "Dezembro de 2028" },
 	],
 };
 
 export const certifications: Certification[] = [
+	{
+		id: "nodejs-rocketseat",
+		name: "Node.js",
+		issuer: "Rocketseat • Dez 2025",
+	},
 	{
 		id: "http-performance",
 		name: "HTTP e Performance",
@@ -61,10 +77,6 @@ export const certifications: Certification[] = [
 	{
 		id: "interfaces-navegacao-armazenamento-local",
 		name: "Interfaces, Navegação e Armazenamento local",
-	},
-	{
-		id: "nodejs",
-		name: "Node.js",
 	},
 	{
 		id: "fundamentos-java",

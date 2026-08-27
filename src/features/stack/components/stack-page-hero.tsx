@@ -12,7 +12,7 @@ export function StackPageHero() {
 					className="flex flex-col gap-6"
 				>
 					<span className="font-mono text-xs font-semibold uppercase tracking-[0.18em] text-primary-hover">
-						Stack
+						Capacidades técnicas
 					</span>
 					<h1 className="max-w-2xl text-[clamp(2rem,4vw,3.25rem)] font-extrabold leading-[1.12] tracking-tight text-fg">
 						{heroContent.eyebrow}

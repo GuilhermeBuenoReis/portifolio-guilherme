@@ -3,10 +3,10 @@ import { cn } from "#/lib/utils";
 
 export const navLinks = [
 	{ label: "Início", to: "/", exact: true },
-	{ label: "Projetos", to: "/projects", exact: false },
+	{ label: "Produtos", to: "/projects", exact: false },
 	{ label: "Experiência", to: "/experience", exact: false },
-	{ label: "Stack", to: "/stack", exact: false },
 	{ label: "Sobre", to: "/about", exact: false },
+	{ label: "Contato", to: "/contact", exact: false },
 ] as const;
 
 type NavLinkProps = (typeof navLinks)[number];
@@ -23,6 +23,7 @@ export function NavLink({ label, to, exact }: NavLinkProps) {
 			className={cn(
 				"relative inline-flex items-center whitespace-nowrap",
 				"rounded px-3 py-1.5 text-sm transition-colors duration-150",
+				"outline-none focus-visible:ring-2 focus-visible:ring-(--primary-border)",
 				isActive ? "text-primary-hover" : "text-fg-secondary hover:text-fg",
 			)}
 		>
