@@ -86,6 +86,7 @@
 		font-family: "Inter", system-ui, -apple-system, sans-serif;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
+		min-width: 320px;
 	}
 
 	a {
@@ -95,6 +96,11 @@
 
 	button {
 		font-family: inherit;
+	}
+
+	:focus-visible {
+		outline-color: var(--primary);
+		outline-offset: 3px;
 	}
 
 	::selection {
