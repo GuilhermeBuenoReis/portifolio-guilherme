@@ -1,196 +1,120 @@
-# Guilherme Bueno Reis - Portfolio
+# Guilherme Reis — Portfolio
 
-Portfólio pessoal de Guilherme Bueno Reis, Desenvolvedor Fullstack, criado para apresentar projetos, trajetória profissional, stack técnica, certificações e canais de contato.
+Código-fonte do meu site profissional e portfólio.
 
-O projeto tem foco em React, TypeScript, Node.js, interfaces modernas e aplicações web performáticas.
+O projeto reúne minha atuação em engenharia de software, liderança técnica, construção de produtos e desenvolvimento fullstack. A aplicação funciona como uma camada pública para apresentar experiência, projetos, decisões de engenharia e formas de contato.
 
-## About
+## Website
 
-Este portfólio reúne uma visão prática da minha atuação como desenvolvedor fullstack. A aplicação apresenta projetos reais e acadêmicos, experiência profissional, formação, stack de desenvolvimento e uma área de contato para novas oportunidades.
+[devguilhermebuenoreis.com.br](https://www.devguilhermebuenoreis.com.br/)
 
-A interface foi construída com uma estética escura por padrão, suporte a tema claro/sistema, navegação responsiva e páginas organizadas por domínio.
+## Objetivo
 
-## Preview
+O portfólio está evoluindo de uma apresentação centrada apenas em stack para um posicionamento mais próximo do trabalho que exerço hoje: construir e liderar produtos na interseção entre **engenharia, produto e negócio**.
 
-URL configurada nos metadados do projeto:
+Isso significa que tecnologia continua presente, mas como ferramenta para demonstrar capacidade de execução, e não como a mensagem principal do site.
 
-[https://guilherme-reis.vercel.app](https://guilherme-reis.vercel.app)
+## Experiência da aplicação
 
-Assets públicos disponíveis no projeto:
+- página inicial com posicionamento profissional e projetos selecionados
+- área de projetos com filtros por categoria
+- experiência profissional, formação e certificações
+- visão da stack e das áreas de engenharia em que atuo
+- seção sobre trajetória, produto e filosofia de desenvolvimento
+- canais de contato e presença profissional
+- layout responsivo para desktop e mobile
+- temas claro, escuro e baseado no sistema
+- animações com respeito a preferências de redução de movimento
+- metadados de SEO, Open Graph, Twitter Card e canonical URL
 
-- `public/favicon.svg`
-- `public/favicon.ico`
-- `public/robots.txt`
-- `public/curriculo-guilherme-reis.pdf`
+## Stack
 
-## Features
+| Área | Tecnologia |
+| --- | --- |
+| Interface | React 19 + TypeScript |
+| Routing | TanStack Router |
+| Build | Vite |
+| Styling | Tailwind CSS v4 |
+| Motion | Motion |
+| UI | Lucide React + primitives compatíveis com shadcn/ui |
+| Qualidade | Biome |
+| Testes | Vitest + Testing Library |
 
-- Página inicial com hero, chamadas para projetos e contato.
-- Listagem de projetos com filtro por categoria: trabalho, projeto pessoal e faculdade.
-- Seção de projetos em destaque.
-- Página de experiência com trajetória profissional, formação acadêmica e certificações.
-- Página de stack com visão técnica de frontend, backend, infraestrutura, arquitetura e ferramentas.
-- Página sobre com história, visão de produto, foco técnico e filosofia de desenvolvimento.
-- Página de contato com e-mail, Gmail, WhatsApp, GitHub e LinkedIn.
-- Layout responsivo com header desktop e navegação inferior para mobile.
-- Alternância de tema entre claro, escuro e sistema.
-- Animações de entrada com Motion.
-- Metadados de SEO, Open Graph, Twitter Card, canonical URL e `robots.txt`.
+## Estrutura
 
-## Technologies
+```text
+src/
+├── app/
+├── components/
+│   ├── layout/
+│   └── ui/
+├── features/
+│   ├── about/
+│   ├── contact/
+│   ├── experience/
+│   ├── portfolio/
+│   ├── projects/
+│   └── stack/
+├── lib/
+├── pages/
+├── routes/
+└── styles/
+```
 
-Principais tecnologias e ferramentas presentes no projeto:
+A organização separa componentes compartilhados da composição de páginas e mantém conteúdo de domínio próximo das seções que o utilizam.
 
-- React 19
-- React DOM 19
-- TypeScript 6
-- Vite 8
-- TanStack Start
-- TanStack Router
-- TanStack Router Devtools
-- Tailwind CSS v4
-- Motion
-- Lucide React
-- Nitro
-- Biome
-- Vitest
-- Testing Library
-- jsdom
-- clsx
-- tailwind-merge
-- class-variance-authority
+## Rotas principais
 
-O projeto também possui configuração compatível com componentes no estilo shadcn/ui por meio do arquivo `components.json`.
+| Rota | Conteúdo |
+| --- | --- |
+| `/` | apresentação principal |
+| `/projects` | projetos |
+| `/experience` | experiência e formação |
+| `/stack` | tecnologias e áreas técnicas |
+| `/about` | trajetória e visão |
+| `/contact` | contato |
 
-## Certifications
+## Performance e acessibilidade
 
-- HTTP e Performance
-- Aprofundando em Hooks
-- Interfaces, Navegação e Armazenamento local
-- Node.js
-- Fundamentos de Java
+O projeto inclui:
 
-## Getting Started
+- preload por intenção no TanStack Router
+- restauração de scroll
+- carregamento assíncrono de seções da home
+- metadados globais para mecanismos de busca e compartilhamento
+- canonical URL
+- `robots.txt`
+- layout responsivo
+- tratamento de `prefers-reduced-motion`
 
-Este projeto usa `pnpm`, conforme indicado pelo arquivo `pnpm-lock.yaml`.
-
-Instale as dependências:
+## Desenvolvimento
 
 ```bash
 pnpm install
-```
-
-Rode o servidor de desenvolvimento:
-
-```bash
 pnpm dev
 ```
 
-Por padrão, o script de desenvolvimento usa a porta `3000`:
+A aplicação roda localmente em:
 
-```bash
+```text
 http://localhost:3000
 ```
 
-Para gerar a build de produção:
+## Qualidade
 
 ```bash
+pnpm test
+pnpm lint
+pnpm check
 pnpm build
 ```
 
-Para visualizar a build:
+## Contato
 
-```bash
-pnpm preview
-```
+- [Website](https://www.devguilhermebuenoreis.com.br/)
+- [LinkedIn](https://www.linkedin.com/in/guilherme-bueno-reis/)
+- [GitHub](https://github.com/GuilhermeBuenoReis)
 
-## Scripts
+## Status
 
-Scripts disponíveis no `package.json`:
-
-| Script | Comando | Descrição |
-| --- | --- | --- |
-| `dev` | `vite dev --port 3000` | Inicia o servidor de desenvolvimento. |
-| `generate-routes` | `tsr generate` | Gera a árvore de rotas do TanStack Router. |
-| `build` | `vite build` | Cria a build de produção. |
-| `preview` | `vite preview` | Executa o preview da build. |
-| `test` | `vitest run` | Executa os testes com Vitest. |
-| `format` | `biome format` | Formata os arquivos com Biome. |
-| `lint` | `biome lint` | Executa o lint com Biome. |
-| `check` | `biome check` | Executa verificações do Biome. |
-
-## Project Structure
-
-Resumo da estrutura principal do projeto:
-
-```txt
-src/
-  app/
-    providers/          # Providers globais da aplicação
-  components/
-    layout/             # Header, footer, layout principal e navegação mobile
-    ui/                 # Componentes visuais reutilizáveis
-  features/
-    about/              # Seções e dados da página Sobre
-    contact/            # Componentes e dados de contato
-    experience/         # Experiência, trajetória, formação e certificações
-    portfolio/          # Hero principal do portfólio
-    projects/           # Cards, grid, filtros e dados dos projetos
-    stack/              # Seções e dados da stack técnica
-  lib/
-    utils/              # Utilitários compartilhados
-  pages/                # Composição das páginas
-  routes/               # Rotas file-based do TanStack Router
-  styles/
-    globals.css         # Tema visual, tokens e estilos globais
-```
-
-Arquivos de configuração relevantes:
-
-- `vite.config.ts`
-- `tsconfig.json`
-- `biome.json`
-- `tsr.config.json`
-- `components.json`
-
-## Routes
-
-Rotas principais encontradas em `src/routes`:
-
-- `/` - página inicial
-- `/projects` - projetos
-- `/experience` - experiência e formação
-- `/stack` - stack técnica
-- `/about` - sobre
-- `/contact` - contato
-
-## Performance and SEO
-
-O projeto inclui alguns cuidados coerentes com performance, SEO e experiência de uso:
-
-- Rotas com `defaultPreload: "intent"` no TanStack Router.
-- Restauração de scroll habilitada no roteador.
-- Carregamento assíncrono de seções da home com `React.lazy` e `Suspense`.
-- Metadados globais com title, description, robots, author e theme color.
-- Tags Open Graph e Twitter Card configuradas.
-- Canonical URL definida.
-- Preconnect para Google Fonts.
-- `robots.txt` público.
-- Layout responsivo para desktop e mobile.
-- Respeito a `prefers-reduced-motion` nos estilos globais.
-
-## Contact
-
-Canais de contato encontrados no código:
-
-- E-mail: [guilhermebuenoreis.contact@gmail.com](mailto:guilhermebuenoreis.contact@gmail.com?subject=Contato%20pelo%20portf%C3%B3lio)
-- GitHub: [GuilhermeBuenoReis](https://github.com/GuilhermeBuenoReis)
-- LinkedIn: [guilherme-bueno-reis](https://www.linkedin.com/in/guilherme-bueno-reis)
-- Instagram: [devguilherme_bueno](https://www.instagram.com/devguilherme_bueno/)
-- WhatsApp: [abrir conversa](https://wa.me/5542988663891?text=Ol%C3%A1%20Guilherme%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto.)
-
-## Notes
-
-- Este repositório está marcado como `private` no `package.json`.
-- Nenhuma licença foi declarada no projeto.
-- Não há screenshot versionado no repositório.
+O portfólio está em evolução contínua para acompanhar minha atuação profissional e os produtos que estou construindo.
