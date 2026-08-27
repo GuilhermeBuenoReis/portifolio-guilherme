@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 export function ProjectsHero() {
 	return (
-		<section className="border-b border-border py-24 md:py-28">
+		<section className="border-b border-border py-20 md:py-28">
 			<div className="mx-auto max-w-280 px-6">
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}
@@ -11,14 +11,14 @@ export function ProjectsHero() {
 					className="flex flex-col gap-4"
 				>
 					<span className="font-mono text-xs font-semibold uppercase tracking-[0.18em] text-primary-hover">
-						Portfólio
+						Produtos e sistemas
 					</span>
 					<h1 className="text-[clamp(2.5rem,5vw,4rem)] font-extrabold leading-[1.1] tracking-tight text-fg">
-						Projetos
+						Trabalho selecionado
 					</h1>
 					<p className="max-w-xl text-[1.0625rem] leading-relaxed text-fg-secondary">
-						Sistemas que desenvolvi — desde plataformas de gestão empresarial e
-						e-commerces a soluções de saúde e apps mobile.
+						Produtos próprios, trabalhos para clientes e experimentos que
+						mostram como conecto problema, produto e engenharia.
 					</p>
 				</motion.div>
 			</div>

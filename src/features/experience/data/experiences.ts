@@ -2,6 +2,23 @@ import type { Experience } from "#/features/experience/types/experience";
 
 export const experiences: Experience[] = [
 	{
+		id: "anvero",
+		company: "Anvero",
+		role: "Co-Founder & CTO",
+		period: "Jul 2026 - Presente",
+		description:
+			"Liderança de produto e tecnologia na construção de um SaaS voltado à recuperação e priorização de oportunidades comerciais no WhatsApp, abrangendo arquitetura, experiência de uso, integrações, segurança técnica e entrega.",
+		stack: [
+			"Produto",
+			"React",
+			"TypeScript",
+			"Node.js",
+			"PostgreSQL",
+			"Docker",
+			"WhatsApp Cloud API",
+		],
+	},
+	{
 		id: "buenos-cakes",
 		company: "Buenos Cakes",
 		role: "Desenvolvedor Full Stack",

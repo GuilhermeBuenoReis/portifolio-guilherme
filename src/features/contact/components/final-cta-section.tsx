@@ -18,11 +18,11 @@ export function FinalCtaSection() {
 			<div className="mx-auto flex max-w-280 flex-col items-center gap-8 px-6 text-center">
 				<div className="flex flex-col gap-4">
 					<h2 className="text-2xl font-bold tracking-tight text-fg md:text-3xl">
-						Vamos construir algo simples, bonito e funcional?
+						Tem um problema de produto ou operação para resolver?
 					</h2>
 					<p className="mx-auto max-w-xl text-sm leading-relaxed text-fg-secondary md:text-base">
-						Estou sempre aberto a novos desafios e parcerias para transformar
-						ideias complexas em experiências digitais memoráveis.
+						Vamos conversar sobre o contexto, as decisões e o software que pode
+						transformar essa operação.
 					</p>
 				</div>
 

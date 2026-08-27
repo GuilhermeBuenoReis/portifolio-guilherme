@@ -71,23 +71,11 @@ function CardHeader({ icon: Icon, title, subtitle }: CardHeaderProps) {
 	);
 }
 
-function SkillRow({ label, level }: SkillBar) {
+function SkillRow({ label }: SkillBar) {
 	return (
-		<div className="flex flex-col gap-2">
-			<div className="flex items-center justify-between">
-				<span className="font-mono text-sm text-fg">{label}</span>
-				<span className="font-mono text-xs text-primary-hover">{level}%</span>
-			</div>
-			<div className="h-1 w-full overflow-hidden rounded-full bg-surface-elevated">
-				<motion.div
-					initial={{ scaleX: 0 }}
-					whileInView={{ scaleX: 1 }}
-					viewport={{ once: true }}
-					transition={{ duration: 0.8, ease: "easeOut" }}
-					style={{ width: `${level}%`, transformOrigin: "left" }}
-					className="h-full rounded-full bg-primary"
-				/>
-			</div>
+		<div className="flex items-center gap-3 rounded-lg border border-border bg-background-soft px-4 py-3">
+			<span className="h-1.5 w-1.5 rounded-full bg-primary-hover" />
+			<span className="text-sm font-medium text-fg">{label}</span>
 		</div>
 	);
 }
@@ -171,11 +159,6 @@ export function TechnicalOverviewSection() {
 									{badge}
 								</span>
 							))}
-						</div>
-						<div className="mt-5 rounded-lg border-l-2 border-primary bg-background-soft px-4 py-3">
-							<code className="font-mono text-xs text-fg-secondary">
-								{infraCard.command}
-							</code>
 						</div>
 						<p className="mt-5 text-sm leading-relaxed text-fg-secondary">
 							{infraCard.description}

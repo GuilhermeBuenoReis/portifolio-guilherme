@@ -2,7 +2,6 @@ import type { LucideIcon } from "lucide-react";
 
 export type SkillBar = {
 	label: string;
-	level: number;
 };
 
 export type MethodologyBlock = {
@@ -37,7 +36,6 @@ export type MethodologiesCardData = {
 export type InfraCardData = {
 	title: string;
 	badges: string[];
-	command: string;
 	description: string;
 };
 

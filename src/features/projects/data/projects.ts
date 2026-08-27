@@ -2,25 +2,79 @@ import type { Project } from "#/features/projects/types/project";
 
 export const projects: Project[] = [
 	{
-		id: "onec-platform",
-		name: "Onec Platform",
-		category: "Trabalho",
+		id: "anvero",
+		name: "Anvero",
+		category: "Produto",
 		description:
-			"Sistema completo de CRM e gerenciamento empresarial com foco em performance e experiência do usuário.",
-		tags: ["Fastify", "Drizzle ORM", "React", "TypeScript"],
+			"SaaS que ajuda pequenos negócios a identificar conversas que precisam de retorno e organizar as próximas ações no WhatsApp.",
+		problem:
+			"Oportunidades comerciais descem na caixa de entrada, perdem contexto e ficam sem responsável ou próximo passo.",
+		role: "Co-Founder e CTO, responsável por produto, arquitetura, integrações, segurança técnica e entrega.",
+		status: "Em construção e validação",
+		tags: ["React", "TypeScript", "Node.js", "PostgreSQL", "WhatsApp"],
 		repos: [
 			{
-				label: "Web",
-				url: "https://github.com/GuilhermeBuenoReis/Onec-frellancer",
+				label: "Conhecer a Anvero",
+				url: "https://www.anvero.com.br",
+				kind: "website",
 			},
 			{
-				label: "Api",
+				label: "Repositório da API",
+				url: "https://github.com/GuilhermeBuenoReis/anvero-api",
+				kind: "repository",
+			},
+		],
+		bannerGradient:
+			"bg-gradient-to-br from-violet-950 via-[#17102d] to-slate-950",
+		featured: true,
+	},
+	{
+		id: "gitto",
+		name: "Gitto",
+		category: "Produto",
+		description:
+			"Cliente Git desktop local-first para organizar repositórios, branches e worktrees em uma experiência mais direta.",
+		problem:
+			"Fluxos importantes do Git ficam espalhados entre terminal, explorador de arquivos e clientes com pouca clareza operacional.",
+		role: "Idealização, produto, design da experiência e desenvolvimento desktop full stack.",
+		status: "Open source em desenvolvimento",
+		tags: ["Tauri", "Rust", "React", "TypeScript", "Git"],
+		repos: [
+			{
+				label: "Repositório",
+				url: "https://github.com/GuilhermeBuenoReis/gitto",
+				kind: "repository",
+			},
+		],
+		bannerGradient:
+			"bg-gradient-to-br from-slate-950 via-indigo-950 to-violet-950",
+		featured: true,
+	},
+	{
+		id: "onec-platform",
+		name: "ONEC",
+		category: "Trabalho",
+		description:
+			"Plataforma para gestão de negociações, contratos e parceiros, com frontend tipado e backend modular.",
+		problem:
+			"Centralizar fluxos comerciais e operacionais que dependiam de processos fragmentados e baixa visibilidade.",
+		role: "Desenvolvimento do frontend e backend, contratos de API, autenticação, modelagem e qualidade.",
+		status: "Projeto entregue",
+		tags: ["React", "Fastify", "Drizzle ORM", "PostgreSQL"],
+		repos: [
+			{
+				label: "Frontend",
+				url: "https://github.com/GuilhermeBuenoReis/Onec-frellancer",
+				kind: "repository",
+			},
+			{
+				label: "Backend",
 				url: "https://github.com/GuilhermeBuenoReis/onec-backend",
+				kind: "repository",
 			},
 		],
 		bannerGradient:
 			"bg-gradient-to-br from-indigo-950 via-purple-950 to-violet-900",
-		preview: "crm",
 		featured: true,
 	},
 	{
@@ -28,21 +82,26 @@ export const projects: Project[] = [
 		name: "Buenos Cakes",
 		category: "Trabalho",
 		description:
-			"Sistema de pedidos otimizado com fluxos de checkout simplificados e gerenciamento de inventário em tempo real.",
-		tags: ["Next.js", "Tailwind CSS", "Fastify", "PostgreSQL"],
+			"Plataforma de pedidos personalizados com catálogo, endereços, checkout, pagamentos e gestão operacional.",
+		problem:
+			"Organizar pedidos sob encomenda com variações, dados do cliente e acompanhamento em um fluxo único.",
+		role: "Produto e desenvolvimento full stack, da modelagem da API à experiência de compra.",
+		status: "Projeto entregue",
+		tags: ["Next.js", "Fastify", "PostgreSQL", "AbacatePay"],
 		repos: [
 			{
-				label: "Web",
+				label: "Frontend",
 				url: "https://github.com/GuilhermeBuenoReis/buenos_cakes_web",
+				kind: "repository",
 			},
 			{
-				label: "Api",
+				label: "Backend",
 				url: "https://github.com/GuilhermeBuenoReis/buenos_cakes_api",
+				kind: "repository",
 			},
 		],
 		bannerGradient:
 			"bg-gradient-to-br from-pink-950 via-purple-950 to-fuchsia-900",
-		preview: "checkout",
 		featured: true,
 	},
 	{
@@ -50,224 +109,158 @@ export const projects: Project[] = [
 		name: "Velan",
 		category: "Trabalho",
 		description:
-			"Plataforma robusta para gestão de saúde, integrando prontuários eletrônicos e agendamentos inteligentes.",
-		tags: ["Laravel", "React", "Inertia", "TypeScript"],
-		repos: [
-			{ label: "Código", url: "https://github.com/GuilhermeBuenoReis/Velan" },
-		],
-		bannerGradient:
-			"bg-gradient-to-br from-cyan-950 via-slate-900 to-purple-950",
-		preview: "health",
-		featured: true,
-	},
-	{
-		id: "velan-mobile",
-		name: "Velan Mobile",
-		category: "Trabalho",
-		description:
-			"Extensão mobile para pacientes, focada em acessibilidade e notificações de acompanhamento médico.",
-		tags: ["Flutter", "Dart", "API REST"],
+			"Solução web e mobile para organização de atendimentos de saúde, formulários e acompanhamento do paciente.",
+		problem:
+			"Simplificar a organização de rotinas clínicas em uma interface clara e preparada para evolução.",
+		role: "Desenvolvimento de interface, navegação, formulários e base de produto web e mobile.",
+		status: "Projeto concluído",
+		tags: ["Laravel", "React", "Inertia", "Flutter"],
 		repos: [
 			{
-				label: "Código",
+				label: "Frontend",
+				url: "https://github.com/GuilhermeBuenoReis/velan-web",
+				kind: "repository",
+			},
+			{
+				label: "Aplicativo mobile",
 				url: "https://github.com/GuilhermeBuenoReis/velan-mobile",
+				kind: "repository",
 			},
 		],
 		bannerGradient:
-			"bg-gradient-to-br from-amber-950 via-purple-950 to-violet-900",
-		preview: "mobile",
+			"bg-gradient-to-br from-cyan-950 via-slate-900 to-purple-950",
 	},
 	{
 		id: "therapy",
 		name: "Therapy",
-		category: "Projeto Pessoal",
+		category: "Experimento",
 		description:
-			"Plataforma para gestão de atendimentos terapêuticos, com agendamentos, autenticação, pagamentos via Stripe e API documentada com Scalar.",
-		tags: [
-			"Fastify",
-			"TypeScript",
-			"Drizzle ORM",
-			"PostgreSQL",
-			"React",
-			"TanStack Router",
-			"Stripe",
-			"Zod",
-		],
+			"Plataforma para gestão de atendimentos terapêuticos, agendamentos, autenticação e pagamentos.",
+		problem:
+			"Explorar uma experiência integrada para profissionais autônomos gerenciarem seus atendimentos.",
+		role: "Pesquisa de produto e desenvolvimento full stack.",
+		status: "Projeto pessoal",
+		tags: ["React", "Fastify", "Drizzle ORM", "Stripe"],
 		repos: [
 			{
-				label: "API",
-				url: "https://github.com/GuilhermeBuenoReis/therapy-api",
+				label: "Frontend",
+				url: "https://github.com/GuilhermeBuenoReis/therapy-web",
+				kind: "repository",
 			},
 			{
-				label: "Web",
-				url: "https://github.com/GuilhermeBuenoReis/therapy-web",
+				label: "Backend",
+				url: "https://github.com/GuilhermeBuenoReis/therapy-api",
+				kind: "repository",
 			},
 		],
 		bannerGradient:
 			"bg-gradient-to-br from-emerald-950 via-purple-950 to-violet-900",
-		featured: true,
 	},
 	{
 		id: "chronicle",
 		name: "Chronicle",
-		category: "Projeto Pessoal",
+		category: "Experimento",
 		description:
-			"Aplicação para registro e organização de anotações, com upload de mídia, autenticação e interface moderna construída com Radix UI.",
-		tags: [
-			"Fastify",
-			"TypeScript",
-			"Drizzle ORM",
-			"PostgreSQL",
-			"React",
-			"Zustand",
-			"Orval",
-			"Cloudinary",
-		],
+			"Aplicação para registrar e organizar anotações com mídia, autenticação e uma interface personalizável.",
+		problem:
+			"Experimentar uma organização de conhecimento mais visual e pessoal.",
+		role: "Concepção e desenvolvimento full stack.",
+		status: "Projeto pessoal",
+		tags: ["React", "Fastify", "PostgreSQL", "Cloudinary"],
 		repos: [
 			{
-				label: "Api",
+				label: "Frontend",
+				url: "https://github.com/GuilhermeBuenoReis/Chronicle-front-end",
+				kind: "repository",
+			},
+			{
+				label: "Backend",
 				url: "https://github.com/GuilhermeBuenoReis/Chronicle-back-end",
+				kind: "repository",
 			},
 		],
 		bannerGradient:
 			"bg-gradient-to-br from-slate-900 via-purple-950 to-indigo-900",
-		featured: true,
 	},
 	{
 		id: "forum-api",
 		name: "Forum API",
-		category: "Projeto Pessoal",
+		category: "Experimento",
 		description:
-			"API de fórum com perguntas, respostas e comentários, aplicando Clean Architecture, DDD e testes automatizados.",
-		tags: [
-			"NestJS",
-			"TypeScript",
-			"Prisma",
-			"PostgreSQL",
-			"JWT",
-			"Vitest",
-			"DDD",
-		],
+			"API de fórum para estudar domínio, casos de uso, testes automatizados e separação de responsabilidades.",
+		problem:
+			"Aprofundar decisões de arquitetura em um domínio com perguntas, respostas e comentários.",
+		role: "Modelagem de domínio, API e testes.",
+		status: "Estudo técnico",
+		tags: ["NestJS", "TypeScript", "Prisma", "Vitest"],
 		repos: [
 			{
-				label: "Código",
+				label: "Repositório",
 				url: "https://github.com/GuilhermeBuenoReis/forum-api",
+				kind: "repository",
 			},
 		],
 		bannerGradient:
 			"bg-gradient-to-br from-violet-950 via-purple-950 to-fuchsia-900",
-		featured: true,
 	},
 	{
 		id: "guairaca-cicd",
 		name: "Guairacá CI/CD",
-		category: "Faculdade",
+		category: "Acadêmico",
 		description:
-			"Projeto de estudo de integração e entrega contínua, com pipelines automatizados de build e deploy.",
-		tags: ["CI/CD", "GitHub Actions", "HTML"],
+			"Estudo de integração e entrega contínua com pipelines automatizados.",
+		problem: "Praticar automação de build e deploy.",
+		role: "Implementação acadêmica.",
+		status: "Projeto acadêmico",
+		tags: ["CI/CD", "GitHub Actions"],
 		repos: [
 			{
-				label: "Código",
+				label: "Repositório",
 				url: "https://github.com/GuilhermeBuenoReis/guairaca-cicd",
+				kind: "repository",
 			},
 		],
 		bannerGradient:
 			"bg-gradient-to-br from-sky-950 via-slate-900 to-purple-950",
 	},
 	{
-		id: "cypress-faculdade",
-		name: "Cypress E2E",
-		category: "Faculdade",
-		description:
-			"Suíte de testes end-to-end automatizados com Cypress para validação de fluxos críticos da aplicação.",
-		tags: ["Cypress", "JavaScript", "Testes E2E"],
-		repos: [
-			{
-				label: "Código",
-				url: "https://github.com/GuilhermeBuenoReis/cypress-faculdade",
-			},
-		],
-		bannerGradient:
-			"bg-gradient-to-br from-green-950 via-slate-900 to-violet-950",
-	},
-	{
 		id: "paradigmas-prog",
 		name: "Paradigmas de Programação",
-		category: "Faculdade",
+		category: "Acadêmico",
 		description:
-			"Projeto da disciplina de Paradigmas de Linguagem de Programação, explorando diferentes paradigmas e suas aplicações.",
+			"Projeto da disciplina de Paradigmas de Linguagem de Programação.",
+		problem: "Explorar paradigmas e suas aplicações.",
+		role: "Implementação acadêmica.",
+		status: "Projeto acadêmico",
 		tags: ["Laravel", "PHP", "Blade"],
 		repos: [
 			{
-				label: "Código",
+				label: "Repositório",
 				url: "https://github.com/GuilhermeBuenoReis/paradigmas-prog-20252-Guilherme-bueno-dos-reis",
+				kind: "repository",
 			},
 		],
 		bannerGradient:
 			"bg-gradient-to-br from-rose-950 via-slate-900 to-purple-950",
 	},
 	{
-		id: "laravel-faculdade",
-		name: "Laravel Faculdade",
-		category: "Faculdade",
-		description:
-			"Projeto acadêmico desenvolvido com Laravel para estudo de desenvolvimento web em PHP e arquitetura MVC.",
-		tags: ["Laravel", "PHP", "Blade"],
-		repos: [
-			{
-				label: "Código",
-				url: "https://github.com/GuilhermeBuenoReis/Laravel-faculdade",
-			},
-		],
-		bannerGradient:
-			"bg-gradient-to-br from-red-950 via-slate-900 to-purple-950",
-	},
-	{
 		id: "financing-app-flutter",
 		name: "Financing App",
-		category: "Faculdade",
+		category: "Acadêmico",
 		description:
-			"Aplicativo mobile de controle financeiro desenvolvido com Flutter, com foco em organização de despesas e receitas.",
-		tags: ["Flutter", "Dart", "Mobile"],
+			"Aplicativo mobile acadêmico para organização de despesas e receitas.",
+		problem: "Praticar desenvolvimento mobile e persistência de dados.",
+		role: "Implementação acadêmica.",
+		status: "Projeto acadêmico",
+		tags: ["Flutter", "Dart"],
 		repos: [
 			{
-				label: "Código",
+				label: "Repositório",
 				url: "https://github.com/GuilhermeBuenoReis/financing_app_flutter",
+				kind: "repository",
 			},
 		],
 		bannerGradient:
 			"bg-gradient-to-br from-cyan-950 via-slate-900 to-indigo-900",
-	},
-	{
-		id: "flutter-faculdade",
-		name: "Flutter Faculdade",
-		category: "Faculdade",
-		description:
-			"Projetos e exercícios de desenvolvimento mobile com Flutter realizados ao longo da graduação.",
-		tags: ["Flutter", "Dart", "Mobile"],
-		repos: [
-			{
-				label: "Código",
-				url: "https://github.com/GuilhermeBuenoReis/flutter_faculdade",
-			},
-		],
-		bannerGradient:
-			"bg-gradient-to-br from-blue-950 via-slate-900 to-purple-950",
-	},
-	{
-		id: "barber-pro-deploy",
-		name: "Barber Pro",
-		category: "Faculdade",
-		description:
-			"Projeto de barbearia com foco em publicação e deploy de aplicações web, trabalhando interface e responsividade.",
-		tags: ["HTML", "CSS", "Deploy"],
-		repos: [
-			{
-				label: "Código",
-				url: "https://github.com/GuilhermeBuenoReis/barber-pro-deploy",
-			},
-		],
-		bannerGradient:
-			"bg-gradient-to-br from-amber-950 via-slate-900 to-violet-900",
 	},
 ];

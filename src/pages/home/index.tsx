@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import { CurrentBuildSection } from "#/features/portfolio/components/current-build-section";
 import { HeroSection } from "#/features/portfolio/components/hero-section";
 
 const FeaturedProjectsSection = lazy(() =>
@@ -35,6 +36,7 @@ export function HomePage() {
 	return (
 		<>
 			<HeroSection />
+			<CurrentBuildSection />
 			<Suspense fallback={null}>
 				<FeaturedProjectsSection />
 				<ExperienceSection />

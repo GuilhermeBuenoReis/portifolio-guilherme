@@ -4,12 +4,12 @@ export const stackCategories: StackCategory[] = [
 	{
 		id: "frontend",
 		label: "Frontend",
-		technologies: ["React", "Next.js", "Tailwind", "TypeScript"],
+		technologies: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
 	},
 	{
 		id: "backend",
 		label: "Backend",
-		technologies: ["Node.js", "Fastify", "PHP Laravel", "REST API"],
+		technologies: ["Node.js", "Fastify", "Laravel", "APIs REST"],
 	},
 	{
 		id: "infra",
@@ -19,6 +19,6 @@ export const stackCategories: StackCategory[] = [
 	{
 		id: "architecture",
 		label: "Arquitetura",
-		technologies: ["Clean Arch", "DDD", "SOLID", "Jest"],
+		technologies: ["Arquitetura modular", "DDD", "SOLID", "Vitest"],
 	},
 ];

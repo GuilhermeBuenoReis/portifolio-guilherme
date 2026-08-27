@@ -37,7 +37,7 @@ export function Header() {
 							Guilherme Reis
 						</span>
 						<span className="mt-1 text-xs font-medium text-fg-muted">
-							Desenvolvedor Full Stack
+							Product Engineer · Co-Founder & CTO
 						</span>
 					</span>
 				</Link>
@@ -50,8 +50,10 @@ export function Header() {
 
 				<div className="flex shrink-0 items-center gap-2 sm:gap-3">
 					<ModeToggle />
-					<Link
-						to="/contact"
+					<a
+						href="https://www.anvero.com.br"
+						target="_blank"
+						rel="noopener noreferrer"
 						className={cn(
 							"inline-flex shrink-0 items-center rounded-md",
 							"border border-(--primary-border) bg-(--primary-soft)",
@@ -61,9 +63,9 @@ export function Header() {
 							"hover:border-primary hover:bg-[rgba(139,92,246,0.22)]",
 						)}
 					>
-						<span className="lg:hidden">Entrar em contato</span>
-						<span className="hidden lg:inline">Entrar em contato</span>
-					</Link>
+						<span className="lg:hidden">Anvero</span>
+						<span className="hidden lg:inline">Conhecer a Anvero</span>
+					</a>
 				</div>
 			</div>
 		</header>

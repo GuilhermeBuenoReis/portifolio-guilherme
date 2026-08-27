@@ -2,7 +2,7 @@
 
 Código-fonte do meu site profissional e portfólio.
 
-O projeto reúne minha atuação em engenharia de software, liderança técnica, construção de produtos e desenvolvimento fullstack. A aplicação funciona como uma camada pública para apresentar experiência, projetos, decisões de engenharia e formas de contato.
+O projeto reúne minha atuação como Product Engineer, Co-Founder e CTO da Anvero. A aplicação apresenta produtos, experiência, decisões de engenharia e formas de contato sem reduzir o trabalho a uma lista de frameworks.
 
 ## Website
 
@@ -16,10 +16,11 @@ Isso significa que tecnologia continua presente, mas como ferramenta para demons
 
 ## Experiência da aplicação
 
-- página inicial com posicionamento profissional e projetos selecionados
-- área de projetos com filtros por categoria
+- página inicial com posicionamento em produto, tecnologia e negócio
+- Anvero como produto central em construção e validação
+- área de produtos com estudos de caso e arquivo secundário
 - experiência profissional, formação e certificações
-- visão da stack e das áreas de engenharia em que atuo
+- visão das capacidades técnicas ligadas a contextos reais
 - seção sobre trajetória, produto e filosofia de desenvolvimento
 - canais de contato e presença profissional
 - layout responsivo para desktop e mobile
@@ -68,9 +69,9 @@ A organização separa componentes compartilhados da composição de páginas e 
 | Rota | Conteúdo |
 | --- | --- |
 | `/` | apresentação principal |
-| `/projects` | projetos |
+| `/projects` | produtos, trabalhos e arquivo de estudos |
 | `/experience` | experiência e formação |
-| `/stack` | tecnologias e áreas técnicas |
+| `/stack` | capacidades técnicas aplicadas a produto |
 | `/about` | trajetória e visão |
 | `/contact` | contato |
 

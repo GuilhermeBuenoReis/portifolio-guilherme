@@ -31,11 +31,12 @@ export function Footer() {
 				)}
 			>
 				<div className="flex flex-col gap-1">
-					<span className="font-mono text-sm font-semibold text-fg">
-						Guilherme Reis
+					<span className="text-sm font-semibold text-fg">Guilherme Reis</span>
+					<span className="text-xs text-fg-secondary">
+						Product Engineer · Co-Founder & CTO da Anvero
 					</span>
 					<span className="text-xs text-fg-muted">
-						© 2026 Desenvolvedor Fullstack. Todos os direitos reservados.
+						© 2026 Guilherme Reis. Produto, tecnologia e software.
 					</span>
 				</div>
 
