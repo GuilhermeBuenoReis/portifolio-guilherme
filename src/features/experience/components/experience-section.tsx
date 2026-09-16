@@ -1,9 +1,16 @@
 import { motion } from "motion/react";
-import { experiences } from "#/features/experience/data/experiences";
+import type { Experience } from "#/features/experience/types/experience";
+import { useTranslation } from "#/i18n/locale-context";
 import { cn } from "#/lib/utils";
 import { TimelineItem } from "./timeline-item";
 
 export function ExperienceSection() {
+	const { t, tRaw } = useTranslation("experience");
+	const items = tRaw<Experience[]>("items").map((item) => ({
+		...item,
+		id: item.company,
+	}));
+
 	return (
 		<motion.section
 			initial={{ opacity: 0 }}
@@ -15,10 +22,10 @@ export function ExperienceSection() {
 			<div className="mx-auto max-w-280 px-6">
 				<div className="mb-14 flex flex-col items-center gap-3 text-center">
 					<span className="text-xs font-semibold uppercase tracking-[0.18em] text-primary-hover">
-						Evolução de Produto e Carreira
+						{t("hero.eyebrow")}
 					</span>
 					<h2 className="text-3xl font-bold tracking-tight text-fg md:text-4xl">
-						Experiência
+						{t("hero.headline")}
 					</h2>
 				</div>
 
@@ -32,12 +39,12 @@ export function ExperienceSection() {
 					/>
 
 					<div className="flex flex-col gap-12 md:gap-16">
-						{experiences.map((experience, index) => (
+						{items.map((experience, index) => (
 							<TimelineItem
 								key={experience.id}
 								experience={experience}
 								index={index}
-								isLast={index === experiences.length - 1}
+								isLast={index === items.length - 1}
 							/>
 						))}
 					</div>

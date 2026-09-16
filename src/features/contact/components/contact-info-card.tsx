@@ -1,14 +1,33 @@
 import { motion } from "motion/react";
-import { SkillIcons } from "#/components/ui/skill-icons";
-import { WhatsappIcon } from "#/components/ui/whatsapp-icon";
 import {
-	availabilityStatus,
-	contactInfo,
+	contactEmail,
+	contactHref,
+	EmailIcon,
+	LocationIcon,
+	locationMapHref,
 	socialLinks,
 } from "#/features/contact/data/contact-links";
+import { useTranslation } from "#/i18n/locale-context";
 import { cn } from "#/lib/utils";
 
 export function ContactInfoCard() {
+	const { t } = useTranslation("contact");
+
+	const contactInfo = [
+		{
+			icon: EmailIcon,
+			label: t("emailInfoLabel"),
+			value: contactEmail,
+			href: contactHref,
+		},
+		{
+			icon: LocationIcon,
+			label: t("locationLabel"),
+			value: t("location"),
+			href: locationMapHref,
+		},
+	];
+
 	return (
 		<motion.aside
 			initial={{ opacity: 0, y: 20 }}
@@ -22,7 +41,7 @@ export function ContactInfoCard() {
 		>
 			<div className="flex flex-col gap-5">
 				<span className="font-mono text-xs font-semibold uppercase tracking-[0.18em] text-primary-hover">
-					Informações de Contato
+					{t("contactInfoLabel")}
 				</span>
 				<ul className="flex flex-col gap-4">
 					{contactInfo.map((info) => (
@@ -50,7 +69,7 @@ export function ContactInfoCard() {
 
 			<div className="flex flex-col gap-4">
 				<span className="font-mono text-xs font-semibold uppercase tracking-[0.18em] text-primary-hover">
-					Redes Sociais
+					{t("socialLabel")}
 				</span>
 				<div className="flex gap-3">
 					{socialLinks.map((social) => (
@@ -67,17 +86,7 @@ export function ContactInfoCard() {
 								"hover:border-(--primary-border) hover:text-primary-hover",
 							)}
 						>
-							{"skill" in social ? (
-								<SkillIcons
-									icons={[social.skill]}
-									alt={social.label}
-									className="h-6 w-6 rounded"
-								/>
-							) : "whatsapp" in social ? (
-								<WhatsappIcon size={18} />
-							) : (
-								<social.icon size={18} />
-							)}
+							<social.icon size={18} />
 						</a>
 					))}
 				</div>
@@ -92,11 +101,11 @@ export function ContactInfoCard() {
 				<div className="flex items-center gap-2">
 					<span className="h-2 w-2 rounded-full bg-emerald-400" />
 					<span className="text-sm font-semibold text-fg">
-						{availabilityStatus.title}
+						{t("availability.title")}
 					</span>
 				</div>
 				<p className="text-sm leading-relaxed text-fg-secondary">
-					{availabilityStatus.description}
+					{t("availability.description")}
 				</p>
 			</div>
 		</motion.aside>

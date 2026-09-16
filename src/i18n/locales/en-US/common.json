@@ -1,0 +1,43 @@
+{
+	"nav": {
+		"products": "Products",
+		"experience": "Experience",
+		"about": "About",
+		"contact": "Contact",
+		"home": "Home",
+		"ariaLabel": "Main navigation"
+	},
+	"header": {
+		"roleLabel": "Software Engineer",
+		"homeAriaLabel": "Guilherme Reis - go to homepage"
+	},
+	"footer": {
+		"rights": "All rights reserved."
+	},
+	"languageSelect": {
+		"label": "Select language",
+		"pt-BR": "Português",
+		"en-US": "English",
+		"es-ES": "Español"
+	},
+	"themeToggle": {
+		"ariaLabel": "Toggle theme",
+		"light": "Light",
+		"dark": "Dark",
+		"system": "System"
+	},
+	"cta": {
+		"viewProducts": "View products",
+		"viewProject": "View product",
+		"viewCase": "View case study",
+		"viewGithub": "View GitHub",
+		"contact": "Get in touch",
+		"resume": "Resume",
+		"downloadPdf": "Download PDF"
+	},
+	"notFound": {
+		"title": "Page not found",
+		"description": "The page you're looking for doesn't exist or was moved.",
+		"backHome": "Back to home"
+	}
+}

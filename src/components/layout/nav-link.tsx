@@ -1,24 +1,34 @@
-import { Link, useRouterState } from "@tanstack/react-router";
+import { useRouterState } from "@tanstack/react-router";
+import { LocalizedLink } from "#/components/localized-link";
+import { stripLocalePrefix } from "#/i18n/locale-path";
 import { cn } from "#/lib/utils";
 
 export const navLinks = [
-	{ label: "Início", to: "/", exact: true },
-	{ label: "Projetos", to: "/projects", exact: false },
-	{ label: "Experiência", to: "/experience", exact: false },
-	{ label: "Stack", to: "/stack", exact: false },
-	{ label: "Sobre", to: "/about", exact: false },
+	{ labelKey: "nav.products", to: "/{-$locale}/projects", exact: false },
+	{ labelKey: "nav.experience", to: "/{-$locale}/experience", exact: false },
+	{ labelKey: "nav.about", to: "/{-$locale}/about", exact: false },
 ] as const;
 
-type NavLinkProps = (typeof navLinks)[number];
+type NavLinkProps = {
+	label: string;
+	to: (typeof navLinks)[number]["to"];
+	exact: boolean;
+};
+
+function toUnprefixedPath(to: string): string {
+	return to.replace("/{-$locale}", "") || "/";
+}
 
 export function NavLink({ label, to, exact }: NavLinkProps) {
 	const { location } = useRouterState();
+	const pathname = stripLocalePrefix(location.pathname);
+	const target = toUnprefixedPath(to);
 	const isActive = exact
-		? location.pathname === to
-		: location.pathname === to || location.pathname.startsWith(`${to}/`);
+		? pathname === target
+		: pathname === target || pathname.startsWith(`${target}/`);
 
 	return (
-		<Link
+		<LocalizedLink
 			to={to}
 			className={cn(
 				"relative inline-flex items-center whitespace-nowrap",
@@ -30,6 +40,6 @@ export function NavLink({ label, to, exact }: NavLinkProps) {
 			{isActive && (
 				<span className="absolute -bottom-px left-3 right-3 h-px bg-(--primary-border)" />
 			)}
-		</Link>
+		</LocalizedLink>
 	);
 }

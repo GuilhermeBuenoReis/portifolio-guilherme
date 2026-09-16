@@ -1,0 +1,63 @@
+{
+	"meta": {
+		"title": "Guilherme Reis | Software Engineer & Product Builder",
+		"description": "Software Engineer construindo produtos SaaS entre produto e engenharia. Conheça Tenira, Anvero e trabalhos selecionados."
+	},
+	"hero": {
+		"eyebrow": "SOFTWARE ENGINEER · PRODUCT BUILDER",
+		"headline": "Eu construo produtos de software do problema até produção.",
+		"subheadline": "Trabalho entre produto e engenharia, transformando problemas pouco estruturados em software que chega a produção.",
+		"secondLine": "Hoje construindo Tenira e trabalhando com produto e tecnologia na Anvero.",
+		"ctaPrimary": "Ver produtos",
+		"ctaSecondary": "GitHub",
+		"linkedin": "LinkedIn",
+		"resume": "Currículo",
+		"photoAlt": "Guilherme Reis, Software Engineer"
+	},
+	"building": {
+		"label": "BUILDING",
+		"headline": "Produtos que estou construindo.",
+		"tenira": {
+			"tagline": "Abra. Saiba o que fazer.",
+			"description": "Workspace para equipes pequenas que transforma tarefas, prazos, bloqueios e contexto em um plano claro para o dia.",
+			"role": "Desenvolvedor Full Stack / Product Engineer",
+			"status": "Em produção"
+		},
+		"anvero": {
+			"description": "SaaS que ajuda pequenos negócios a identificar conversas que precisam de retorno comercial e organizar próximas ações no WhatsApp.",
+			"role": "CTO",
+			"status": "Startup"
+		}
+	},
+	"howIWork": {
+		"label": "COMO EU TRABALHO",
+		"headline": "Como eu trabalho.",
+		"product": {
+			"title": "Produto",
+			"description": "Entender o problema antes da solução."
+		},
+		"engineering": {
+			"title": "Engenharia",
+			"description": "Construir uma base que permita o produto evoluir."
+		},
+		"delivery": {
+			"title": "Entrega",
+			"description": "Levar até produção, medir e iterar."
+		}
+	},
+	"selectedWork": {
+		"label": "TRABALHOS SELECIONADOS",
+		"headline": "Trabalhos selecionados.",
+		"viewAll": "Ver todos os projetos"
+	},
+	"aboutPreview": {
+		"label": "SOBRE",
+		"headline": "Sou Guilherme.",
+		"excerpt": "Comecei programando porque gostava de construir coisas. Hoje gosto principalmente de pegar um problema ainda meio bagunçado, entender o que realmente importa e transformar isso em um produto que alguém consegue usar.",
+		"readMore": "Conhecer minha trajetória"
+	},
+	"finalCta": {
+		"headline": "Quer conversar sobre produto, engenharia ou SaaS?",
+		"description": "Estou sempre aberto a trocar ideia sobre produtos, arquitetura e os desafios de levar software até produção."
+	}
+}

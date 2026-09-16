@@ -1,10 +1,18 @@
-import { Link } from "@tanstack/react-router";
+import { Github, Linkedin } from "lucide-react";
+import { LanguageSelect } from "#/components/layout/language-select";
+import { LocalizedLink } from "#/components/localized-link";
 import { ModeToggle } from "#/components/mode-toggle";
 import { Monogram } from "#/components/ui/monogram";
+import { useTranslation } from "#/i18n/locale-context";
 import { cn } from "#/lib/utils";
 import { NavLink, navLinks } from "./nav-link";
 
+const GITHUB_URL = "https://github.com/GuilhermeBuenoReis";
+const LINKEDIN_URL = "https://www.linkedin.com/in/guilherme-bueno-reis";
+
 export function Header() {
+	const { t } = useTranslation("common");
+
 	return (
 		<header
 			className={cn(
@@ -14,9 +22,9 @@ export function Header() {
 			)}
 		>
 			<div className="mx-auto flex h-full max-w-280 items-center justify-between gap-6 px-4 sm:px-6 lg:gap-12">
-				<Link
-					to="/"
-					aria-label="Guilherme Reis - ir para a página inicial"
+				<LocalizedLink
+					to="/{-$locale}"
+					aria-label={t("header.homeAriaLabel")}
 					className={cn(
 						"group inline-flex shrink-0 items-center gap-3 rounded-md",
 						"outline-none transition-colors duration-150",
@@ -37,21 +45,52 @@ export function Header() {
 							Guilherme Reis
 						</span>
 						<span className="mt-1 text-xs font-medium text-fg-muted">
-							Desenvolvedor Full Stack
+							{t("header.roleLabel")}
 						</span>
 					</span>
-				</Link>
+				</LocalizedLink>
 
 				<nav className="hidden flex-1 items-center justify-center gap-1 lg:flex">
 					{navLinks.map((link) => (
-						<NavLink key={link.to} {...link} />
+						<NavLink key={link.to} {...link} label={t(link.labelKey)} />
 					))}
 				</nav>
 
 				<div className="flex shrink-0 items-center gap-2 sm:gap-3">
+					<a
+						href={GITHUB_URL}
+						target="_blank"
+						rel="noreferrer"
+						aria-label="GitHub"
+						className={cn(
+							"hidden size-10 items-center justify-center rounded-md sm:inline-flex",
+							"border border-border bg-surface-elevated text-fg-secondary",
+							"transition-colors duration-150",
+							"outline-none focus-visible:ring-2 focus-visible:ring-(--primary-border)",
+							"hover:border-(--primary-border) hover:text-primary-hover",
+						)}
+					>
+						<Github size={18} />
+					</a>
+					<a
+						href={LINKEDIN_URL}
+						target="_blank"
+						rel="noreferrer"
+						aria-label="LinkedIn"
+						className={cn(
+							"hidden size-10 items-center justify-center rounded-md sm:inline-flex",
+							"border border-border bg-surface-elevated text-fg-secondary",
+							"transition-colors duration-150",
+							"outline-none focus-visible:ring-2 focus-visible:ring-(--primary-border)",
+							"hover:border-(--primary-border) hover:text-primary-hover",
+						)}
+					>
+						<Linkedin size={18} />
+					</a>
+					<LanguageSelect />
 					<ModeToggle />
-					<Link
-						to="/contact"
+					<LocalizedLink
+						to="/{-$locale}/contact"
 						className={cn(
 							"inline-flex shrink-0 items-center rounded-md",
 							"border border-(--primary-border) bg-(--primary-soft)",
@@ -61,9 +100,8 @@ export function Header() {
 							"hover:border-primary hover:bg-[rgba(139,92,246,0.22)]",
 						)}
 					>
-						<span className="lg:hidden">Entrar em contato</span>
-						<span className="hidden lg:inline">Entrar em contato</span>
-					</Link>
+						{t("nav.contact")}
+					</LocalizedLink>
 				</div>
 			</div>
 		</header>

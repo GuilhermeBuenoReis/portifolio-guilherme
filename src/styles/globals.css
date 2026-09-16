@@ -112,4 +112,21 @@
 			scroll-behavior: auto !important;
 		}
 	}
+
+	@media print {
+		body {
+			background: #fff;
+			color: #000;
+		}
+
+		header,
+		footer,
+		nav {
+			display: none !important;
+		}
+
+		main {
+			padding-top: 0 !important;
+		}
+	}
 }

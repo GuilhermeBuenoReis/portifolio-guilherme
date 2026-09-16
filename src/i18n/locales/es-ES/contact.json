@@ -1,0 +1,22 @@
+{
+	"meta": {
+		"title": "Contacto | Guilherme Reis",
+		"description": "Escribe a Guilherme Reis sobre producto, ingeniería u oportunidades en SaaS."
+	},
+	"hero": {
+		"eyebrow": "CONTACTO",
+		"headline": "¿Quieres hablar sobre producto, ingeniería o SaaS?",
+		"subheadline": "Con gusto intercambio ideas sobre productos, arquitectura u oportunidades. Solo envía un correo."
+	},
+	"emailLabel": "Enviar correo",
+	"copyEmail": "Copiar correo",
+	"emailInfoLabel": "Correo",
+	"contactInfoLabel": "Información de Contacto",
+	"socialLabel": "Redes Sociales",
+	"locationLabel": "Ubicación",
+	"location": "Brasil / Remoto",
+	"availability": {
+		"title": "Abierto a hablar",
+		"description": "Siempre abierto a intercambiar ideas sobre producto, ingeniería y las próximas oportunidades."
+	}
+}

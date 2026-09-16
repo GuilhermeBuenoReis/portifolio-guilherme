@@ -40,20 +40,22 @@ export function ExperienceCard({ experience, index, side }: Props) {
 				<p className="mb-4 text-sm leading-relaxed text-fg-secondary">
 					{experience.description}
 				</p>
-				<div className="flex flex-wrap gap-1.5">
-					{experience.stack.map((tech) => (
-						<span
-							key={tech}
-							className={cn(
-								"rounded border border-border-strong",
-								"bg-surface-elevated px-2 py-0.5",
-								"text-xs font-medium text-fg-muted",
-							)}
-						>
-							{tech}
-						</span>
-					))}
-				</div>
+				{experience.stack && experience.stack.length > 0 && (
+					<div className="flex flex-wrap gap-1.5">
+						{experience.stack.map((tech) => (
+							<span
+								key={tech}
+								className={cn(
+									"rounded border border-border-strong",
+									"bg-surface-elevated px-2 py-0.5",
+									"text-xs font-medium text-fg-muted",
+								)}
+							>
+								{tech}
+							</span>
+						))}
+					</div>
+				)}
 			</div>
 		</motion.div>
 	);

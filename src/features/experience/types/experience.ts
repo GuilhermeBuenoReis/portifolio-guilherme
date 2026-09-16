@@ -4,5 +4,5 @@ export type Experience = {
 	role: string;
 	period: string;
 	description: string;
-	stack: string[];
+	stack?: string[];
 };

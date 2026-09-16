@@ -1,0 +1,121 @@
+{
+	"meta": {
+		"title": "Projetos | Guilherme Reis",
+		"description": "Tenira, Anvero e outros trabalhos selecionados da trajetória de Guilherme Reis entre produto e engenharia."
+	},
+	"hero": {
+		"eyebrow": "PROJETOS",
+		"headline": "Projetos",
+		"subheadline": "Produtos que estou construindo e trabalhos selecionados da minha trajetória."
+	},
+	"filters": {
+		"all": "Todos",
+		"products": "Produtos",
+		"experiments": "Experimentos",
+		"personalProject": "Projeto Pessoal",
+		"coursework": "Faculdade"
+	},
+	"selectedLabel": "Trabalhos Selecionados",
+	"tenira": {
+		"title": "Tenira",
+		"tagline": "Abra. Saiba o que fazer.",
+		"description": "Workspace para equipes pequenas que transforma tarefas, prazos, bloqueios e contexto em um plano claro para o dia.",
+		"role": "Desenvolvedor Full Stack / Product Engineer",
+		"status": "Em produção",
+		"meta": {
+			"title": "Tenira | Guilherme Reis",
+			"description": "Como estruturei o Tenira, um SaaS de gestão de trabalho para equipes pequenas construído com TypeScript, React, PostgreSQL e Supabase."
+		},
+		"caseStudy": {
+			"context": {
+				"heading": "Contexto",
+				"body": "Tenira é um SaaS de gestão de trabalho para equipes pequenas, centralizando projetos, ciclos, tarefas, notas, calendário e prioridades diárias em um único workspace."
+			},
+			"problem": {
+				"heading": "Problema",
+				"body": "Equipes pequenas costumam perder o fio da meada entre tarefas, prazos e contexto espalhado em várias ferramentas, o que torna difícil saber o que realmente importa fazer a cada dia."
+			},
+			"decisions": {
+				"heading": "Decisões",
+				"body": "Estruturei os fluxos críticos de autenticação, acesso, regras de negócio e persistência com TypeScript, React, PostgreSQL e Supabase, priorizando uma base sólida antes de expandir a superfície do produto."
+			},
+			"stack": {
+				"heading": "Stack",
+				"intro": "Tecnologias que sustentam o produto do backend ao deploy.",
+				"technologies": [
+					"React",
+					"TypeScript",
+					"Node.js",
+					"PostgreSQL",
+					"Supabase",
+					"Vercel"
+				]
+			},
+			"state": {
+				"heading": "Estado atual",
+				"body": "O Tenira está em produção, com pagamentos, analytics de produto, testes automatizados e CI/CD, em iteração contínua com base no uso real."
+			}
+		}
+	},
+	"anvero": {
+		"title": "Anvero",
+		"description": "SaaS que ajuda pequenos negócios a identificar conversas que precisam de retorno comercial e organizar próximas ações no WhatsApp.",
+		"role": "CTO",
+		"status": "Startup",
+		"meta": {
+			"title": "Anvero | Guilherme Reis",
+			"description": "Como liderei a arquitetura da Anvero, uma startup SaaS que prioriza conversas de WhatsApp com potencial de retorno comercial."
+		},
+		"caseStudy": {
+			"context": {
+				"heading": "Contexto",
+				"body": "Anvero é uma startup SaaS voltada à priorização de conversas de WhatsApp que exigem retorno comercial, transformando mensagens em fluxos rastreáveis de follow-up."
+			},
+			"problem": {
+				"heading": "Problema",
+				"body": "Negócios que atendem pelo WhatsApp acumulam conversas que exigem acompanhamento comercial, e sem um fluxo estruturado é fácil perder oportunidades no meio do volume de mensagens."
+			},
+			"decisions": {
+				"heading": "Decisões",
+				"body": "Como CTO, modelei os domínios de organizações, equipes, contatos, conversas, follow-ups, integrações e automações, e conduzi a integração com Supabase, PostgreSQL, Edge Functions e WhatsApp Cloud API, incluindo Embedded Signup e processamento de webhooks."
+			},
+			"stack": {
+				"heading": "Stack",
+				"intro": "As peças que conectam a modelagem de domínio ao WhatsApp Cloud API.",
+				"technologies": [
+					"Supabase",
+					"PostgreSQL",
+					"WhatsApp Cloud API",
+					"Edge Functions",
+					"TypeScript"
+				]
+			},
+			"state": {
+				"heading": "Estado atual",
+				"body": "Entre julho e agosto de 2026, liderei a arquitetura e o desenvolvimento da Anvero como CTO, com a modelagem de domínio e as integrações centrais já estruturadas."
+			}
+		}
+	},
+	"selected": {
+		"buenosCakes": {
+			"title": "Buenos Cakes",
+			"description": "Plataforma full stack para pedidos personalizados, com API REST em Node.js, Fastify e Drizzle ORM, e pagamentos via AbacatePay.",
+			"role": "Desenvolvedor Full Stack",
+			"period": "Fevereiro 2026 - Maio 2026"
+		},
+		"onec": {
+			"title": "ONEC",
+			"description": "Sistema para gestão de negociações, contratos e parceiros, com dashboards, importação de planilhas e API REST documentada.",
+			"role": "Desenvolvedor Full Stack",
+			"period": "Fevereiro 2025 - Outubro 2025"
+		},
+		"velan": {
+			"title": "Velan",
+			"description": "Telas, componentes e formulários com Laravel, Inertia.js e React, padronizados com React Hook Form, Zod e Radix UI.",
+			"role": "Desenvolvedor Full Stack",
+			"period": "Julho 2025 - Novembro 2025"
+		}
+	},
+	"experimentsHeading": "Experimentos / Open Source",
+	"emptyState": "Nenhum projeto encontrado nessa categoria."
+}

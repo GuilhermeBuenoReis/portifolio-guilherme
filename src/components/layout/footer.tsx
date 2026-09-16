@@ -1,4 +1,5 @@
-import { whatsappHref } from "#/features/contact/data/contact-links";
+import { contactHref } from "#/features/contact/data/contact-links";
+import { useTranslation } from "#/i18n/locale-context";
 import { cn } from "#/lib/utils";
 
 const socialLinks = [
@@ -11,10 +12,12 @@ const socialLinks = [
 		href: "https://www.linkedin.com/in/guilherme-bueno-reis/",
 	},
 	{ label: "Instagram", href: "https://www.instagram.com/devguilherme_bueno/" },
-	{ label: "WhatsApp", href: whatsappHref },
+	{ label: "Email", href: contactHref },
 ] as const;
 
 export function Footer() {
+	const { t } = useTranslation("common");
+
 	return (
 		<footer
 			className={cn(
@@ -35,7 +38,7 @@ export function Footer() {
 						Guilherme Reis
 					</span>
 					<span className="text-xs text-fg-muted">
-						© 2026 Desenvolvedor Fullstack. Todos os direitos reservados.
+						© 2026 Guilherme Reis. {t("footer.rights")}
 					</span>
 				</div>
 
@@ -44,8 +47,8 @@ export function Footer() {
 						<a
 							key={link.label}
 							href={link.href}
-							target="_blank"
-							rel="noreferrer"
+							target={link.href.startsWith("mailto:") ? undefined : "_blank"}
+							rel={link.href.startsWith("mailto:") ? undefined : "noreferrer"}
 							className={cn(
 								"text-sm text-fg-secondary",
 								"transition-colors duration-150 hover:text-fg",

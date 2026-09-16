@@ -1,9 +1,13 @@
 import { Download, Mail } from "lucide-react";
 import { motion } from "motion/react";
-import { gmailHref } from "#/features/contact/data/contact-links";
+import { LocalizedLink } from "#/components/localized-link";
+import { contactHref } from "#/features/contact/data/contact-links";
+import { useTranslation } from "#/i18n/locale-context";
 import { cn } from "#/lib/utils";
 
 export function ProfileCtaSection() {
+	const { t } = useTranslation("experience");
+
 	return (
 		<section className="pb-24 md:pb-32">
 			<div className="mx-auto max-w-280 px-6">
@@ -20,18 +24,16 @@ export function ProfileCtaSection() {
 				>
 					<div className="flex flex-col items-center gap-3">
 						<h2 className="text-3xl font-bold tracking-tight text-fg md:text-4xl">
-							Interessado no meu perfil?
+							{t("cta.headline")}
 						</h2>
 						<p className="max-w-md text-sm leading-relaxed text-fg-secondary">
-							Estou sempre aberto a novos desafios e parcerias inovadoras. Vamos
-							construir algo incrível juntos.
+							{t("cta.description")}
 						</p>
 					</div>
 
 					<div className="flex flex-col items-center gap-3 sm:flex-row">
-						<a
-							href="/curriculo-guilherme-reis.pdf"
-							download
+						<LocalizedLink
+							to="/{-$locale}/resume"
 							className={cn(
 								"inline-flex items-center gap-2 rounded-lg px-5 py-2.5",
 								"bg-primary text-sm font-semibold text-white shadow-sm shadow-primary/25",
@@ -39,10 +41,10 @@ export function ProfileCtaSection() {
 							)}
 						>
 							<Download size={16} />
-							Download CV (PDF)
-						</a>
+							{t("cta.downloadResume")}
+						</LocalizedLink>
 						<a
-							href={gmailHref}
+							href={contactHref}
 							target="_blank"
 							rel="noopener noreferrer"
 							className={cn(
@@ -54,7 +56,7 @@ export function ProfileCtaSection() {
 							)}
 						>
 							<Mail size={16} />
-							Me Envie um Email
+							{t("cta.sendEmail")}
 						</a>
 					</div>
 				</motion.div>

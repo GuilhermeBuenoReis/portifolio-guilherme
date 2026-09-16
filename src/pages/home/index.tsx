@@ -13,12 +13,6 @@ const ExperienceSection = lazy(() =>
 	),
 );
 
-const StackSection = lazy(() =>
-	import("#/features/stack/components/stack-section").then((module) => ({
-		default: module.StackSection,
-	})),
-);
-
 const AboutSection = lazy(() =>
 	import("#/features/about/components/about-section").then((module) => ({
 		default: module.AboutSection,
@@ -38,7 +32,6 @@ export function HomePage() {
 			<Suspense fallback={null}>
 				<FeaturedProjectsSection />
 				<ExperienceSection />
-				<StackSection />
 				<AboutSection />
 				<FinalCtaSection />
 			</Suspense>

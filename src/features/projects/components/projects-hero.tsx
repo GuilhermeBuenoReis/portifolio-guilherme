@@ -1,6 +1,9 @@
 import { motion } from "motion/react";
+import { useTranslation } from "#/i18n/locale-context";
 
 export function ProjectsHero() {
+	const { t } = useTranslation("projects");
+
 	return (
 		<section className="border-b border-border py-24 md:py-28">
 			<div className="mx-auto max-w-280 px-6">
@@ -11,14 +14,13 @@ export function ProjectsHero() {
 					className="flex flex-col gap-4"
 				>
 					<span className="font-mono text-xs font-semibold uppercase tracking-[0.18em] text-primary-hover">
-						Portfólio
+						{t("hero.eyebrow")}
 					</span>
 					<h1 className="text-[clamp(2.5rem,5vw,4rem)] font-extrabold leading-[1.1] tracking-tight text-fg">
-						Projetos
+						{t("hero.headline")}
 					</h1>
 					<p className="max-w-xl text-[1.0625rem] leading-relaxed text-fg-secondary">
-						Sistemas que desenvolvi — desde plataformas de gestão empresarial e
-						e-commerces a soluções de saúde e apps mobile.
+						{t("hero.subheadline")}
 					</p>
 				</motion.div>
 			</div>

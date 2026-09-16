@@ -1,0 +1,66 @@
+{
+	"meta": {
+		"title": "Experiencia | Guilherme Reis",
+		"description": "La trayectoria profesional de Guilherme Reis entre producto e ingeniería, construyendo SaaS, APIs y sistemas de gestión en producción."
+	},
+	"hero": {
+		"eyebrow": "EXPERIENCIA",
+		"headline": "Experiencia"
+	},
+	"items": [
+		{
+			"company": "Tenira",
+			"role": "Desarrollador Full Stack / Product Engineer",
+			"period": "Agosto 2026 - Presente",
+			"description": "Desarrollo un SaaS de gestión de trabajo para equipos pequeños, centralizando proyectos, ciclos, tareas, notas, calendario y prioridades diarias en un único workspace. Estructuré flujos críticos de autenticación, acceso, reglas de negocio y persistencia con TypeScript, React, PostgreSQL y Supabase. Implementé pagos, analítica de producto, pruebas automatizadas, CI/CD y despliegue en Vercel."
+		},
+		{
+			"company": "Anvero",
+			"role": "CTO",
+			"period": "Julio 2026 - Agosto 2026",
+			"description": "Lideré la arquitectura y el desarrollo de una startup SaaS enfocada en priorizar conversaciones de WhatsApp que requieren seguimiento comercial, transformando mensajes en flujos rastreables de follow-up. Modelé los dominios de organizaciones, equipos, contactos, conversaciones, follow-ups, integraciones y automatizaciones. Lideré la integración con Supabase, PostgreSQL, Edge Functions y WhatsApp Cloud API, incluyendo Embedded Signup y procesamiento de webhooks."
+		},
+		{
+			"company": "Buenos Cakes",
+			"role": "Desarrollador Full Stack",
+			"period": "Febrero 2026 - Mayo 2026",
+			"description": "Desarrollé una plataforma full stack para pedidos personalizados, estructurando catálogo, productos, tamaños, rellenos, direcciones y pedidos en un único flujo de operación. Creé una API REST con Node.js, Fastify, TypeScript, PostgreSQL y Drizzle ORM, con JWT, cookies HTTP-only, Zod, OpenAPI/Scalar, Vitest e integración de pagos con AbacatePay."
+		},
+		{
+			"company": "Velan",
+			"role": "Desarrollador Full Stack",
+			"period": "Julio 2025 - Noviembre 2025",
+			"description": "Construí pantallas, componentes, formularios y navegación con Laravel, Inertia.js, React, TypeScript, Vite y Tailwind CSS. Estandaricé componentes, validaciones e interacciones con React Hook Form, Zod, Radix UI y Motion, reduciendo la duplicación y facilitando el mantenimiento."
+		},
+		{
+			"company": "ONEC",
+			"role": "Desarrollador Full Stack",
+			"period": "Febrero 2025 - Octubre 2025",
+			"description": "Desarrollé un sistema para la gestión de negociaciones, contratos, socios y flujos administrativos. Entregué dashboards, formularios, importación y exportación de hojas de cálculo, carga de archivos, una API REST documentada, autenticación JWT y pruebas con Vitest, usando React, Fastify, PostgreSQL y Drizzle ORM."
+		}
+	],
+	"education": {
+		"title": "Formación",
+		"degree": "Ingeniería de Software",
+		"institution": "UniGuairacá",
+		"location": "Guarapuava - PR, Brasil",
+		"period": "Febrero 2024 - Diciembre 2028"
+	},
+	"cta": {
+		"headline": "¿Te interesa mi perfil?",
+		"description": "Siempre estoy abierto a hablar sobre producto, ingeniería y las próximas oportunidades.",
+		"downloadResume": "Ver currículum",
+		"sendEmail": "Enviar correo"
+	},
+	"certifications": {
+		"title": "Certificaciones",
+		"subtitle": "Cursos completados en Rocketseat",
+		"items": [
+			"Node.js",
+			"HTTP y Rendimiento",
+			"Profundizando en Hooks",
+			"Interfaces, Navegación y Almacenamiento local",
+			"Fundamentos de Java"
+		]
+	}
+}

@@ -1,7 +1,9 @@
 import { motion } from "motion/react";
-import { heroContent } from "#/features/about/data/about-page-data";
+import { useTranslation } from "#/i18n/locale-context";
 
 export function AboutHero() {
+	const { t } = useTranslation("about");
+
 	return (
 		<section className="border-b border-border py-20 md:py-28">
 			<div className="mx-auto max-w-280 px-6">
@@ -12,21 +14,11 @@ export function AboutHero() {
 					className="flex flex-col gap-6"
 				>
 					<span className="font-mono text-xs font-semibold uppercase tracking-[0.22em] text-primary-hover">
-						{heroContent.eyebrow}
+						{t("hero.eyebrow")}
 					</span>
 					<h1 className="max-w-4xl text-[clamp(2.25rem,5vw,4rem)] font-extrabold leading-[1.08] tracking-tight text-fg">
-						{heroContent.titleSegments.map((segment) => (
-							<span
-								key={segment.text}
-								className={segment.highlight ? "text-primary-hover" : undefined}
-							>
-								{segment.text}
-							</span>
-						))}
+						{t("hero.headline")}
 					</h1>
-					<p className="max-w-2xl text-[1.0625rem] leading-relaxed text-fg-secondary">
-						{heroContent.subtitle}
-					</p>
 				</motion.div>
 			</div>
 		</section>

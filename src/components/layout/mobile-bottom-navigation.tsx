@@ -1,35 +1,50 @@
-import { Link, useRouterState } from "@tanstack/react-router";
-import {
-	Briefcase,
-	Code2,
-	Home,
-	Layers,
-	type LucideIcon,
-	User,
-} from "lucide-react";
+import { useRouterState } from "@tanstack/react-router";
+import { Briefcase, Home, Layers, type LucideIcon, User } from "lucide-react";
+import { LocalizedLink } from "#/components/localized-link";
+import { useTranslation } from "#/i18n/locale-context";
+import { stripLocalePrefix } from "#/i18n/locale-path";
 import { cn } from "#/lib/utils";
 
 type BottomNavItem = {
-	label: string;
-	to: string;
+	labelKey: string;
+	to:
+		| "/{-$locale}"
+		| "/{-$locale}/projects"
+		| "/{-$locale}/experience"
+		| "/{-$locale}/about";
 	exact: boolean;
 	icon: LucideIcon;
 };
 
 const items: BottomNavItem[] = [
-	{ label: "Início", to: "/", exact: true, icon: Home },
-	{ label: "Projetos", to: "/projects", exact: false, icon: Code2 },
-	{ label: "Exp", to: "/experience", exact: false, icon: Briefcase },
-	{ label: "Stack", to: "/stack", exact: false, icon: Layers },
-	{ label: "Sobre", to: "/about", exact: false, icon: User },
+	{ labelKey: "nav.home", to: "/{-$locale}", exact: true, icon: Home },
+	{
+		labelKey: "nav.products",
+		to: "/{-$locale}/projects",
+		exact: false,
+		icon: Layers,
+	},
+	{
+		labelKey: "nav.experience",
+		to: "/{-$locale}/experience",
+		exact: false,
+		icon: Briefcase,
+	},
+	{ labelKey: "nav.about", to: "/{-$locale}/about", exact: false, icon: User },
 ];
 
+function toUnprefixedPath(to: string): string {
+	return to.replace("/{-$locale}", "") || "/";
+}
+
 export function MobileBottomNavigation() {
+	const { t } = useTranslation("common");
 	const { location } = useRouterState();
+	const pathname = stripLocalePrefix(location.pathname);
 
 	return (
 		<nav
-			aria-label="Navegação principal"
+			aria-label={t("nav.ariaLabel")}
 			className={cn(
 				"fixed inset-x-0 bottom-0 z-50 lg:hidden",
 				"border-t border-border bg-surface/95 backdrop-blur-md",
@@ -38,15 +53,16 @@ export function MobileBottomNavigation() {
 		>
 			<ul className="mx-auto flex max-w-md items-stretch justify-between gap-1 px-3 py-2">
 				{items.map((item) => {
+					const target = toUnprefixedPath(item.to);
 					const isActive = item.exact
-						? location.pathname === item.to
-						: location.pathname === item.to ||
-							location.pathname.startsWith(`${item.to}/`);
+						? pathname === target
+						: pathname === target || pathname.startsWith(`${target}/`);
 					const Icon = item.icon;
+					const label = t(item.labelKey);
 
 					return (
 						<li key={item.to} className="flex-1">
-							<Link
+							<LocalizedLink
 								to={item.to}
 								className={cn(
 									"flex flex-col items-center justify-center gap-1 rounded-xl px-1 py-2",
@@ -58,8 +74,8 @@ export function MobileBottomNavigation() {
 								)}
 							>
 								<Icon size={20} />
-								<span>{item.label}</span>
-							</Link>
+								<span>{label}</span>
+							</LocalizedLink>
 						</li>
 					);
 				})}

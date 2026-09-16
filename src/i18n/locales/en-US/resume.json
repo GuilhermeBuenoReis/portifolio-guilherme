@@ -1,0 +1,30 @@
+{
+	"meta": {
+		"title": "Resume | Guilherme Reis",
+		"description": "Resume of Guilherme Reis, a Full Stack Developer experienced in building SaaS products, REST APIs, and management systems in production."
+	},
+	"heading": "Resume",
+	"downloadHint": "Use your browser's print option to save as PDF.",
+	"sections": {
+		"summary": "Professional Summary",
+		"skills": "Technical Skills",
+		"experience": "Experience",
+		"education": "Education",
+		"certifications": "Certifications"
+	},
+	"summary": "Full Stack Developer experienced in building and evolving SaaS products, REST APIs, and management systems in production. I work with TypeScript, React, Node.js, Fastify, PostgreSQL, and Supabase, covering architecture, data modeling, authentication, integrations, testing, payments, CI/CD, and deployment. I bring both technical and leadership experience at a startup, staying focused on code quality, reliability, UX, and product delivery.",
+	"skills": {
+		"core": {
+			"label": "Core",
+			"items": "TypeScript, JavaScript, React, Next.js, Node.js, Fastify, PostgreSQL, Supabase, Drizzle ORM"
+		},
+		"frontend": {
+			"label": "Frontend",
+			"items": "TanStack Router/Query, Tailwind CSS, shadcn/ui, React Hook Form, Zod, Zustand, Inertia.js, Vite"
+		},
+		"engineering": {
+			"label": "Engineering",
+			"items": "APIs REST, JWT, OAuth, Webhooks, OpenAPI, Vitest, Playwright, GitHub Actions, Vercel, Docker, SOLID, Clean Architecture, CI/CD"
+		}
+	}
+}

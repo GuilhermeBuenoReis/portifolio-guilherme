@@ -1,0 +1,43 @@
+{
+	"nav": {
+		"products": "Produtos",
+		"experience": "Experiência",
+		"about": "Sobre",
+		"contact": "Contato",
+		"home": "Início",
+		"ariaLabel": "Navegação principal"
+	},
+	"header": {
+		"roleLabel": "Software Engineer",
+		"homeAriaLabel": "Guilherme Reis - ir para a página inicial"
+	},
+	"footer": {
+		"rights": "Todos os direitos reservados."
+	},
+	"languageSelect": {
+		"label": "Selecionar idioma",
+		"pt-BR": "Português",
+		"en-US": "English",
+		"es-ES": "Español"
+	},
+	"themeToggle": {
+		"ariaLabel": "Alternar tema",
+		"light": "Claro",
+		"dark": "Escuro",
+		"system": "Sistema"
+	},
+	"cta": {
+		"viewProducts": "Ver produtos",
+		"viewProject": "Ver produto",
+		"viewCase": "Ver case",
+		"viewGithub": "Ver GitHub",
+		"contact": "Entrar em contato",
+		"resume": "Currículo",
+		"downloadPdf": "Baixar PDF"
+	},
+	"notFound": {
+		"title": "Página não encontrada",
+		"description": "A página que você procura não existe ou foi movida.",
+		"backHome": "Voltar para o início"
+	}
+}

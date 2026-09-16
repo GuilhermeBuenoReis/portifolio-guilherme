@@ -1,15 +1,15 @@
-import { ExternalLink, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import { motion } from "motion/react";
-import { WhatsappIcon } from "#/components/ui/whatsapp-icon";
 import {
 	contactEmail,
 	contactHref,
-	gmailHref,
-	whatsappHref,
 } from "#/features/contact/data/contact-links";
+import { useTranslation } from "#/i18n/locale-context";
 import { cn } from "#/lib/utils";
 
 export function ContactActions() {
+	const { t } = useTranslation("contact");
+
 	return (
 		<motion.div
 			initial={{ opacity: 0, y: 20 }}
@@ -21,70 +21,21 @@ export function ContactActions() {
 				"[box-shadow:var(--shadow-card)]",
 			)}
 		>
-			<div className="flex flex-col gap-3">
-				<span className="font-mono text-xs font-semibold uppercase tracking-[0.18em] text-primary-hover">
-					Enviar uma Mensagem
-				</span>
-				<h2 className="text-xl font-bold tracking-tight text-fg">
-					Vamos conversar sobre o seu projeto
-				</h2>
-				<p className="text-sm leading-relaxed text-fg-secondary">
-					Clique abaixo para abrir o seu cliente de e-mail com o destinatário e
-					o assunto já preenchidos. É só escrever a mensagem e enviar.
-				</p>
-			</div>
-
-			<div className="flex flex-col gap-3">
-				<a
-					href={contactHref}
-					className={cn(
-						"inline-flex items-center justify-center gap-2 rounded-lg",
-						"bg-primary px-6 py-3.5 text-sm font-semibold text-white",
-						"shadow-sm shadow-primary/25",
-						"transition-colors duration-150 hover:bg-primary-hover",
-					)}
-				>
-					<Mail size={16} />
-					Enviar e-mail
-				</a>
-
-				<div className="grid gap-3 sm:grid-cols-2">
-					<a
-						href={gmailHref}
-						target="_blank"
-						rel="noreferrer"
-						className={cn(
-							"inline-flex items-center justify-center gap-2 rounded-lg",
-							"border border-border-strong bg-surface shadow-sm dark:bg-surface-elevated",
-							"px-6 py-3.5 text-sm font-medium text-fg",
-							"transition-colors duration-150",
-							"hover:border-(--primary-border) hover:bg-(--primary-soft) hover:text-primary-hover",
-						)}
-					>
-						<ExternalLink size={16} />
-						Abrir no Gmail
-					</a>
-
-					<a
-						href={whatsappHref}
-						target="_blank"
-						rel="noreferrer"
-						aria-label="Chamar no WhatsApp"
-						className={cn(
-							"inline-flex items-center justify-center gap-2 rounded-lg",
-							"border border-(--primary-border) bg-(--primary-soft) px-6 py-3.5",
-							"text-sm font-medium text-primary-hover shadow-sm",
-							"transition-colors duration-150 hover:border-primary-hover",
-						)}
-					>
-						<WhatsappIcon size={16} />
-						Chamar no WhatsApp
-					</a>
-				</div>
-			</div>
+			<a
+				href={contactHref}
+				className={cn(
+					"inline-flex items-center justify-center gap-2 rounded-lg",
+					"bg-primary px-6 py-3.5 text-sm font-semibold text-white",
+					"shadow-sm shadow-primary/25",
+					"transition-colors duration-150 hover:bg-primary-hover",
+				)}
+			>
+				<Mail size={16} />
+				{t("emailLabel")}
+			</a>
 
 			<p className="text-xs text-fg-muted">
-				Prefere copiar?{" "}
+				{t("copyEmail")}:{" "}
 				<span className="font-mono text-fg-secondary">{contactEmail}</span>
 			</p>
 		</motion.div>

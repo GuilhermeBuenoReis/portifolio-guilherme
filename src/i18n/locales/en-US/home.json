@@ -1,0 +1,63 @@
+{
+	"meta": {
+		"title": "Guilherme Reis | Software Engineer & Product Builder",
+		"description": "Software Engineer building SaaS products at the intersection of product and engineering. Meet Tenira, Anvero, and selected work."
+	},
+	"hero": {
+		"eyebrow": "SOFTWARE ENGINEER · PRODUCT BUILDER",
+		"headline": "I build software products from problem to production.",
+		"subheadline": "I work at the intersection of product and engineering, turning loosely defined problems into software that ships.",
+		"secondLine": "Currently building Tenira and working on product and technology at Anvero.",
+		"ctaPrimary": "View products",
+		"ctaSecondary": "GitHub",
+		"linkedin": "LinkedIn",
+		"resume": "Resume",
+		"photoAlt": "Guilherme Reis, Software Engineer"
+	},
+	"building": {
+		"label": "BUILDING",
+		"headline": "Products I'm building.",
+		"tenira": {
+			"tagline": "Open it. Know what to do.",
+			"description": "A workspace for small teams that turns tasks, deadlines, blockers, and context into a clear plan for the day.",
+			"role": "Full Stack Developer / Product Engineer",
+			"status": "In production"
+		},
+		"anvero": {
+			"description": "A SaaS that helps small businesses spot conversations that need a commercial follow-up and organize next steps on WhatsApp.",
+			"role": "CTO",
+			"status": "Startup"
+		}
+	},
+	"howIWork": {
+		"label": "HOW I WORK",
+		"headline": "How I work.",
+		"product": {
+			"title": "Product",
+			"description": "Understand the problem before the solution."
+		},
+		"engineering": {
+			"title": "Engineering",
+			"description": "Build a foundation the product can grow on."
+		},
+		"delivery": {
+			"title": "Delivery",
+			"description": "Ship to production, measure, and iterate."
+		}
+	},
+	"selectedWork": {
+		"label": "SELECTED WORK",
+		"headline": "Selected work.",
+		"viewAll": "View all projects"
+	},
+	"aboutPreview": {
+		"label": "ABOUT",
+		"headline": "I'm Guilherme.",
+		"excerpt": "I started coding because I liked building things. Today I mostly enjoy taking a problem that's still a bit messy, figuring out what actually matters, and turning it into a product people can use.",
+		"readMore": "Read my story"
+	},
+	"finalCta": {
+		"headline": "Want to talk about product, engineering, or SaaS?",
+		"description": "I'm always open to exchanging ideas about products, architecture, and the challenges of shipping software to production."
+	}
+}

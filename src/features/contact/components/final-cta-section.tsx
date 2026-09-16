@@ -1,8 +1,14 @@
-import { Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
+import { LocalizedLink } from "#/components/localized-link";
+import { useTranslation } from "#/i18n/locale-context";
 import { cn } from "#/lib/utils";
 
+const GITHUB_URL = "https://github.com/GuilhermeBuenoReis";
+
 export function FinalCtaSection() {
+	const { t } = useTranslation("home");
+	const { t: tCommon } = useTranslation("common");
+
 	return (
 		<motion.section
 			initial={{ opacity: 0, y: 24 }}
@@ -18,17 +24,16 @@ export function FinalCtaSection() {
 			<div className="mx-auto flex max-w-280 flex-col items-center gap-8 px-6 text-center">
 				<div className="flex flex-col gap-4">
 					<h2 className="text-2xl font-bold tracking-tight text-fg md:text-3xl">
-						Vamos construir algo simples, bonito e funcional?
+						{t("finalCta.headline")}
 					</h2>
 					<p className="mx-auto max-w-xl text-sm leading-relaxed text-fg-secondary md:text-base">
-						Estou sempre aberto a novos desafios e parcerias para transformar
-						ideias complexas em experiências digitais memoráveis.
+						{t("finalCta.description")}
 					</p>
 				</div>
 
 				<div className="flex flex-wrap items-center justify-center gap-4">
-					<Link
-						to="/contact"
+					<LocalizedLink
+						to="/{-$locale}/contact"
 						className={cn(
 							"inline-flex items-center rounded-lg",
 							"border border-(--primary-border) bg-(--primary-soft)",
@@ -37,11 +42,11 @@ export function FinalCtaSection() {
 							"hover:border-primary hover:bg-[rgba(139,92,246,0.22)]",
 						)}
 					>
-						Entrar em contato
-					</Link>
+						{tCommon("cta.contact")}
+					</LocalizedLink>
 
 					<a
-						href="https://github.com/GuilhermeBuenoReis"
+						href={GITHUB_URL}
 						target="_blank"
 						rel="noreferrer"
 						className={cn(
@@ -52,7 +57,7 @@ export function FinalCtaSection() {
 							"hover:border-(--primary-border) hover:text-primary-hover",
 						)}
 					>
-						Ver GitHub
+						{tCommon("cta.viewGithub")}
 					</a>
 				</div>
 			</div>

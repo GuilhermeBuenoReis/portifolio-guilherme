@@ -1,0 +1,22 @@
+{
+	"meta": {
+		"title": "Contato | Guilherme Reis",
+		"description": "Fale com Guilherme Reis sobre produto, engenharia ou oportunidades em SaaS."
+	},
+	"hero": {
+		"eyebrow": "CONTATO",
+		"headline": "Quer conversar sobre produto, engenharia ou SaaS?",
+		"subheadline": "Fico feliz em trocar ideia sobre produtos, arquitetura ou oportunidades. É só mandar um e-mail."
+	},
+	"emailLabel": "Enviar e-mail",
+	"copyEmail": "Copiar e-mail",
+	"emailInfoLabel": "E-mail",
+	"contactInfoLabel": "Informações de Contato",
+	"socialLabel": "Redes Sociais",
+	"locationLabel": "Localização",
+	"location": "Brasil / Remoto",
+	"availability": {
+		"title": "Aberto a conversar",
+		"description": "Sempre aberto a trocar ideia sobre produto, engenharia e as próximas oportunidades."
+	}
+}

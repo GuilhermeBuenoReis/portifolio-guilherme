@@ -1,0 +1,58 @@
+{
+	"meta": {
+		"title": "About | Guilherme Reis",
+		"description": "Guilherme Reis's path between product and engineering — from a curiosity for building things to a Software Engineer shipping SaaS in production."
+	},
+	"hero": {
+		"eyebrow": "ABOUT",
+		"headline": "I'm Guilherme.",
+		"photoAlt": "Guilherme Reis, Software Engineer"
+	},
+	"story": {
+		"paragraphs": [
+			"I started coding because I liked building things. Over time I realized writing code was only part of the job.",
+			"Today I mostly enjoy taking a problem that's still a bit messy, figuring out what actually matters, and turning it into a product people can use.",
+			"That means moving between product and engineering: understanding what actually solves the problem, deciding how to structure the system, and staying with it until the software reaches production — not just shipping a feature and moving on."
+		]
+	},
+	"focus": {
+		"label": "HOW I THINK",
+		"items": [
+			{
+				"tag": "01 / Product",
+				"title": "Understand before building",
+				"description": "I'd rather understand the problem and the context of who's going to use it before settling on the technical solution."
+			},
+			{
+				"tag": "02 / Engineering",
+				"title": "A foundation that can grow",
+				"description": "Architecture, domain modeling, and technical decisions built so the product can evolve without turning into technical debt."
+			},
+			{
+				"tag": "03 / Delivery",
+				"title": "Production is the bar",
+				"description": "Code that never reaches production hasn't solved anything. I measure, iterate, and stay close to what actually happens after deploy."
+			}
+		]
+	},
+	"trajectory": {
+		"title": "Trajectory",
+		"education": "Software Engineering, UniGuairacá — Guarapuava, PR",
+		"certifications": "Certifications (Rocketseat): Node.js, HTTP and Performance, Deep Dive into Hooks, Interfaces and Navigation, Java Fundamentals"
+	},
+	"stack": {
+		"title": "Stack",
+		"core": {
+			"label": "CORE",
+			"items": "TypeScript · React · Node.js · PostgreSQL"
+		},
+		"frontend": {
+			"label": "FRONTEND",
+			"items": "TanStack · Tailwind · shadcn/ui · React Hook Form · Zod"
+		},
+		"engineering": {
+			"label": "ENGINEERING",
+			"items": "REST · OAuth · Webhooks · OpenAPI · Vitest · Playwright · Docker · CI/CD"
+		}
+	}
+}

@@ -9,153 +9,210 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as StackRouteImport } from './routes/stack'
-import { Route as ProjectsRouteImport } from './routes/projects'
-import { Route as ExperienceRouteImport } from './routes/experience'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as AboutRouteImport } from './routes/about'
-import { Route as IndexRouteImport } from './routes/index'
+import { Route as Char123LocaleChar125IndexRouteImport } from './routes/{-$locale}/index'
+import { Route as Char123LocaleChar125AboutRouteImport } from './routes/{-$locale}/about'
+import { Route as Char123LocaleChar125ContactRouteImport } from './routes/{-$locale}/contact'
+import { Route as Char123LocaleChar125ExperienceRouteImport } from './routes/{-$locale}/experience'
+import { Route as Char123LocaleChar125ResumeRouteImport } from './routes/{-$locale}/resume'
+import { Route as Char123LocaleChar125StackRouteImport } from './routes/{-$locale}/stack'
+import { Route as Char123LocaleChar125ProjectsIndexRouteImport } from './routes/{-$locale}/projects/index'
+import { Route as Char123LocaleChar125ProjectsSlugRouteImport } from './routes/{-$locale}/projects/$slug'
 
-const StackRoute = StackRouteImport.update({
-  id: '/stack',
-  path: '/stack',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProjectsRoute = ProjectsRouteImport.update({
-  id: '/projects',
-  path: '/projects',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ExperienceRoute = ExperienceRouteImport.update({
-  id: '/experience',
-  path: '/experience',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AboutRoute = AboutRouteImport.update({
-  id: '/about',
-  path: '/about',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => rootRouteImport,
-} as any)
+const Char123LocaleChar125IndexRoute =
+  Char123LocaleChar125IndexRouteImport.update({
+    id: '/{-$locale}/',
+    path: '/{-$locale}/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Char123LocaleChar125AboutRoute =
+  Char123LocaleChar125AboutRouteImport.update({
+    id: '/{-$locale}/about',
+    path: '/{-$locale}/about',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Char123LocaleChar125ContactRoute =
+  Char123LocaleChar125ContactRouteImport.update({
+    id: '/{-$locale}/contact',
+    path: '/{-$locale}/contact',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Char123LocaleChar125ExperienceRoute =
+  Char123LocaleChar125ExperienceRouteImport.update({
+    id: '/{-$locale}/experience',
+    path: '/{-$locale}/experience',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Char123LocaleChar125ResumeRoute =
+  Char123LocaleChar125ResumeRouteImport.update({
+    id: '/{-$locale}/resume',
+    path: '/{-$locale}/resume',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Char123LocaleChar125StackRoute =
+  Char123LocaleChar125StackRouteImport.update({
+    id: '/{-$locale}/stack',
+    path: '/{-$locale}/stack',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Char123LocaleChar125ProjectsIndexRoute =
+  Char123LocaleChar125ProjectsIndexRouteImport.update({
+    id: '/{-$locale}/projects/',
+    path: '/{-$locale}/projects/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Char123LocaleChar125ProjectsSlugRoute =
+  Char123LocaleChar125ProjectsSlugRouteImport.update({
+    id: '/{-$locale}/projects/$slug',
+    path: '/{-$locale}/projects/$slug',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
-  '/': typeof IndexRoute
-  '/about': typeof AboutRoute
-  '/contact': typeof ContactRoute
-  '/experience': typeof ExperienceRoute
-  '/projects': typeof ProjectsRoute
-  '/stack': typeof StackRoute
+  '/{-$locale}/about': typeof Char123LocaleChar125AboutRoute
+  '/{-$locale}/contact': typeof Char123LocaleChar125ContactRoute
+  '/{-$locale}/experience': typeof Char123LocaleChar125ExperienceRoute
+  '/{-$locale}/resume': typeof Char123LocaleChar125ResumeRoute
+  '/{-$locale}/stack': typeof Char123LocaleChar125StackRoute
+  '/{-$locale}/': typeof Char123LocaleChar125IndexRoute
+  '/{-$locale}/projects/$slug': typeof Char123LocaleChar125ProjectsSlugRoute
+  '/{-$locale}/projects/': typeof Char123LocaleChar125ProjectsIndexRoute
 }
 export interface FileRoutesByTo {
-  '/': typeof IndexRoute
-  '/about': typeof AboutRoute
-  '/contact': typeof ContactRoute
-  '/experience': typeof ExperienceRoute
-  '/projects': typeof ProjectsRoute
-  '/stack': typeof StackRoute
+  '/{-$locale}/about': typeof Char123LocaleChar125AboutRoute
+  '/{-$locale}/contact': typeof Char123LocaleChar125ContactRoute
+  '/{-$locale}/experience': typeof Char123LocaleChar125ExperienceRoute
+  '/{-$locale}/resume': typeof Char123LocaleChar125ResumeRoute
+  '/{-$locale}/stack': typeof Char123LocaleChar125StackRoute
+  '/{-$locale}': typeof Char123LocaleChar125IndexRoute
+  '/{-$locale}/projects/$slug': typeof Char123LocaleChar125ProjectsSlugRoute
+  '/{-$locale}/projects': typeof Char123LocaleChar125ProjectsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
-  '/': typeof IndexRoute
-  '/about': typeof AboutRoute
-  '/contact': typeof ContactRoute
-  '/experience': typeof ExperienceRoute
-  '/projects': typeof ProjectsRoute
-  '/stack': typeof StackRoute
+  '/{-$locale}/about': typeof Char123LocaleChar125AboutRoute
+  '/{-$locale}/contact': typeof Char123LocaleChar125ContactRoute
+  '/{-$locale}/experience': typeof Char123LocaleChar125ExperienceRoute
+  '/{-$locale}/resume': typeof Char123LocaleChar125ResumeRoute
+  '/{-$locale}/stack': typeof Char123LocaleChar125StackRoute
+  '/{-$locale}/': typeof Char123LocaleChar125IndexRoute
+  '/{-$locale}/projects/$slug': typeof Char123LocaleChar125ProjectsSlugRoute
+  '/{-$locale}/projects/': typeof Char123LocaleChar125ProjectsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
-    | '/'
-    | '/about'
-    | '/contact'
-    | '/experience'
-    | '/projects'
-    | '/stack'
+    | '/{-$locale}/about'
+    | '/{-$locale}/contact'
+    | '/{-$locale}/experience'
+    | '/{-$locale}/resume'
+    | '/{-$locale}/stack'
+    | '/{-$locale}/'
+    | '/{-$locale}/projects/$slug'
+    | '/{-$locale}/projects/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/contact' | '/experience' | '/projects' | '/stack'
+  to:
+    | '/{-$locale}/about'
+    | '/{-$locale}/contact'
+    | '/{-$locale}/experience'
+    | '/{-$locale}/resume'
+    | '/{-$locale}/stack'
+    | '/{-$locale}'
+    | '/{-$locale}/projects/$slug'
+    | '/{-$locale}/projects'
   id:
     | '__root__'
-    | '/'
-    | '/about'
-    | '/contact'
-    | '/experience'
-    | '/projects'
-    | '/stack'
+    | '/{-$locale}/about'
+    | '/{-$locale}/contact'
+    | '/{-$locale}/experience'
+    | '/{-$locale}/resume'
+    | '/{-$locale}/stack'
+    | '/{-$locale}/'
+    | '/{-$locale}/projects/$slug'
+    | '/{-$locale}/projects/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
-  IndexRoute: typeof IndexRoute
-  AboutRoute: typeof AboutRoute
-  ContactRoute: typeof ContactRoute
-  ExperienceRoute: typeof ExperienceRoute
-  ProjectsRoute: typeof ProjectsRoute
-  StackRoute: typeof StackRoute
+  Char123LocaleChar125AboutRoute: typeof Char123LocaleChar125AboutRoute
+  Char123LocaleChar125ContactRoute: typeof Char123LocaleChar125ContactRoute
+  Char123LocaleChar125ExperienceRoute: typeof Char123LocaleChar125ExperienceRoute
+  Char123LocaleChar125ResumeRoute: typeof Char123LocaleChar125ResumeRoute
+  Char123LocaleChar125StackRoute: typeof Char123LocaleChar125StackRoute
+  Char123LocaleChar125IndexRoute: typeof Char123LocaleChar125IndexRoute
+  Char123LocaleChar125ProjectsSlugRoute: typeof Char123LocaleChar125ProjectsSlugRoute
+  Char123LocaleChar125ProjectsIndexRoute: typeof Char123LocaleChar125ProjectsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/stack': {
-      id: '/stack'
-      path: '/stack'
-      fullPath: '/stack'
-      preLoaderRoute: typeof StackRouteImport
+    '/{-$locale}/': {
+      id: '/{-$locale}/'
+      path: '/{-$locale}'
+      fullPath: '/{-$locale}/'
+      preLoaderRoute: typeof Char123LocaleChar125IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/projects': {
-      id: '/projects'
-      path: '/projects'
-      fullPath: '/projects'
-      preLoaderRoute: typeof ProjectsRouteImport
+    '/{-$locale}/about': {
+      id: '/{-$locale}/about'
+      path: '/{-$locale}/about'
+      fullPath: '/{-$locale}/about'
+      preLoaderRoute: typeof Char123LocaleChar125AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/experience': {
-      id: '/experience'
-      path: '/experience'
-      fullPath: '/experience'
-      preLoaderRoute: typeof ExperienceRouteImport
+    '/{-$locale}/contact': {
+      id: '/{-$locale}/contact'
+      path: '/{-$locale}/contact'
+      fullPath: '/{-$locale}/contact'
+      preLoaderRoute: typeof Char123LocaleChar125ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
+    '/{-$locale}/experience': {
+      id: '/{-$locale}/experience'
+      path: '/{-$locale}/experience'
+      fullPath: '/{-$locale}/experience'
+      preLoaderRoute: typeof Char123LocaleChar125ExperienceRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/about': {
-      id: '/about'
-      path: '/about'
-      fullPath: '/about'
-      preLoaderRoute: typeof AboutRouteImport
+    '/{-$locale}/resume': {
+      id: '/{-$locale}/resume'
+      path: '/{-$locale}/resume'
+      fullPath: '/{-$locale}/resume'
+      preLoaderRoute: typeof Char123LocaleChar125ResumeRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/{-$locale}/stack': {
+      id: '/{-$locale}/stack'
+      path: '/{-$locale}/stack'
+      fullPath: '/{-$locale}/stack'
+      preLoaderRoute: typeof Char123LocaleChar125StackRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/{-$locale}/projects/': {
+      id: '/{-$locale}/projects/'
+      path: '/{-$locale}/projects'
+      fullPath: '/{-$locale}/projects/'
+      preLoaderRoute: typeof Char123LocaleChar125ProjectsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/{-$locale}/projects/$slug': {
+      id: '/{-$locale}/projects/$slug'
+      path: '/{-$locale}/projects/$slug'
+      fullPath: '/{-$locale}/projects/$slug'
+      preLoaderRoute: typeof Char123LocaleChar125ProjectsSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
-  IndexRoute: IndexRoute,
-  AboutRoute: AboutRoute,
-  ContactRoute: ContactRoute,
-  ExperienceRoute: ExperienceRoute,
-  ProjectsRoute: ProjectsRoute,
-  StackRoute: StackRoute,
+  Char123LocaleChar125AboutRoute: Char123LocaleChar125AboutRoute,
+  Char123LocaleChar125ContactRoute: Char123LocaleChar125ContactRoute,
+  Char123LocaleChar125ExperienceRoute: Char123LocaleChar125ExperienceRoute,
+  Char123LocaleChar125ResumeRoute: Char123LocaleChar125ResumeRoute,
+  Char123LocaleChar125StackRoute: Char123LocaleChar125StackRoute,
+  Char123LocaleChar125IndexRoute: Char123LocaleChar125IndexRoute,
+  Char123LocaleChar125ProjectsSlugRoute: Char123LocaleChar125ProjectsSlugRoute,
+  Char123LocaleChar125ProjectsIndexRoute:
+    Char123LocaleChar125ProjectsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

@@ -1,16 +1,18 @@
 import { Monitor, Moon, Sun } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { useTheme } from "#/components/theme-provider";
+import { useTranslation } from "#/i18n/locale-context";
 import { cn } from "#/lib/utils";
 
 const options = [
-	{ value: "light", label: "Claro", icon: Sun },
-	{ value: "dark", label: "Escuro", icon: Moon },
-	{ value: "system", label: "Sistema", icon: Monitor },
+	{ value: "light", labelKey: "themeToggle.light", icon: Sun },
+	{ value: "dark", labelKey: "themeToggle.dark", icon: Moon },
+	{ value: "system", labelKey: "themeToggle.system", icon: Monitor },
 ] as const;
 
 export function ModeToggle() {
 	const { theme, setTheme } = useTheme();
+	const { t } = useTranslation("common");
 	const [open, setOpen] = useState(false);
 	const containerRef = useRef<HTMLDivElement>(null);
 
@@ -45,7 +47,7 @@ export function ModeToggle() {
 			<button
 				type="button"
 				onClick={() => setOpen((prev) => !prev)}
-				aria-label="Alternar tema"
+				aria-label={t("themeToggle.ariaLabel")}
 				aria-haspopup="menu"
 				aria-expanded={open}
 				className={cn(
@@ -92,7 +94,7 @@ export function ModeToggle() {
 								)}
 							>
 								<Icon size={15} />
-								{option.label}
+								{t(option.labelKey)}
 							</button>
 						);
 					})}

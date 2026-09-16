@@ -7,7 +7,19 @@
 	},
 	"files": {
 		"ignoreUnknown": true,
-		"includes": ["**", "!node_modules", "!.next", "!dist", "!build"]
+		"includes": [
+			"**",
+			"!node_modules",
+			"!.next",
+			"!dist",
+			"!build",
+			"!src/routeTree.gen.ts"
+		]
+	},
+	"css": {
+		"parser": {
+			"tailwindDirectives": true
+		}
 	},
 	"formatter": {
 		"enabled": true,
@@ -23,7 +35,8 @@
 		"rules": {
 			"recommended": true,
 			"suspicious": {
-				"noUnknownAtRules": "off"
+				"noUnknownAtRules": "off",
+				"noDocumentCookie": "off"
 			},
 			"a11y": {
 				"noSvgWithoutTitle": "off"

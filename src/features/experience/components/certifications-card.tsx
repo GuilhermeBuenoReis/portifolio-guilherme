@@ -1,9 +1,12 @@
 import { Award } from "lucide-react";
 import { motion } from "motion/react";
-import { certifications } from "#/features/experience/data/trajectory";
+import { useTranslation } from "#/i18n/locale-context";
 import { cn } from "#/lib/utils";
 
 export function CertificationsCard() {
+	const { t, tRaw } = useTranslation("experience");
+	const items = tRaw<string[]>("certifications.items");
+
 	return (
 		<motion.div
 			initial={{ opacity: 0, y: 24 }}
@@ -18,28 +21,26 @@ export function CertificationsCard() {
 		>
 			<div className="flex items-center gap-2.5">
 				<Award size={20} className="text-primary" />
-				<h2 className="text-xl font-semibold tracking-tight text-fg">
-					Certificações
-				</h2>
+				<div className="flex flex-col">
+					<h2 className="text-xl font-semibold tracking-tight text-fg">
+						{t("certifications.title")}
+					</h2>
+					<span className="text-sm text-fg-secondary">
+						{t("certifications.subtitle")}
+					</span>
+				</div>
 			</div>
 
-			<ul className="flex flex-col">
-				{certifications.map((certification, index) => (
+			<ul className="flex flex-wrap gap-2">
+				{items.map((item) => (
 					<li
-						key={certification.id}
+						key={item}
 						className={cn(
-							"flex flex-col gap-0.5 py-4",
-							index > 0 && "border-t border-border",
+							"rounded-full border border-border-strong bg-surface-elevated",
+							"px-3 py-1.5 text-xs font-medium text-fg",
 						)}
 					>
-						<span className="text-sm font-semibold text-fg">
-							{certification.name}
-						</span>
-						{certification.issuer && (
-							<span className="font-mono text-xs text-fg-muted">
-								{certification.issuer}
-							</span>
-						)}
+						{item}
 					</li>
 				))}
 			</ul>
